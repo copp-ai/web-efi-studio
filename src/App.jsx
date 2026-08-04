@@ -5,8 +5,10 @@ import PainPoints from './components/PainPoints';
 import HowItWorks from './components/HowItWorks';
 import ServicesCatalog from './components/ServicesCatalog';
 import PortalMockup from './components/PortalMockup';
+import FounderStatement from './components/FounderStatement';
 import Authority from './components/Authority';
 import FooterCTA from './components/FooterCTA';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
 
 export default function App() {
   return (
@@ -18,9 +20,11 @@ export default function App() {
         <HowItWorks />
         <ServicesCatalog />
         <PortalMockup />
+        <FounderStatement />
         <Authority />
       </main>
       <FooterCTA />
+      <FloatingWhatsApp />
     </div>
   );
 }

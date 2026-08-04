@@ -2,14 +2,14 @@ import React from 'react';
 import { ArrowRight, Clock, Shield, MessageCircle } from 'lucide-react';
 
 export default function FooterCTA() {
-  const whatsappUrl = "https://wa.me/595981000000?text=Hola%20Valeria,%20quisiera%20agendar%20mi%20eFI%20Clarity%20Session";
+  const whatsappUrl = "https://wa.me/595991480481?text=Hola%20Valeria,%20quisiera%20agendar%20mi%20eFI%20Clarity%20Session";
 
   return (
     <footer className="relative bg-efi-dark border-t border-white/10 pt-20 pb-12 overflow-hidden">
       {/* Glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-gold-glow pointer-events-none opacity-30"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Main Banner CTA */}
         <div className="max-w-4xl mx-auto text-center p-8 sm:p-12 rounded-3xl glass-panel-gold border-efi-gold/40 shadow-2xl mb-16">
@@ -22,7 +22,7 @@ export default function FooterCTA() {
             Empezá con una sesión de 90 minutos.
           </h2>
 
-          <p className="text-lg text-efi-muted max-w-2xl mx-auto mb-8">
+          <p className="text-base sm:text-lg text-efi-muted max-w-2xl mx-auto mb-8">
             Salís con tu panorama financiero organizado, tus prioridades claras y un plan concreto armado para tu año. Sin compromisos de largo plazo.
           </p>
 
