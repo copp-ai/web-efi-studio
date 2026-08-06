@@ -20,6 +20,19 @@ Decisión: en vez de competir con eso o depender de acceso a esos repos (que son
 
 ---
 
+## 0. PASO OBLIGATORIO ANTES DE TOCAR CÓDIGO — explorar el sitio real
+
+**No arranques a escribir ni una línea de este brief sin hacer esto primero:**
+
+1. Navegá (browsing real, no inferencia por descripción) a **https://efi-studio-website.vercel.app/** y a **https://onboarding-flow-three.vercel.app/servicios**.
+2. Inspeccioná y anotá: paleta de colores exacta (hex), familias tipográficas, tamaños de fuente, espaciados entre secciones, tratamiento de fotografía, cómo maneja las cards/layouts.
+3. Descargá las 3 fotos de la sección 4.
+4. Recién después de esto, empezá con las secciones 1 a 4ter de este documento.
+
+Si por algún motivo no podés navegar/renderizar esas URLs (a diferencia de cuando trabajaste con el Figma), **decilo explícitamente antes de seguir** — no avances aproximando colores o estructura de memoria/descripción. Es la base de todo lo que pide este brief.
+
+---
+
 ## 1. Qué traer del sitio real (copy y estructura, reescrito con nuestra identidad visual)
 
 - **Filosofía de marca** — 4 pilares: Privacidad, Libertad, Eficiencia, Simplicidad. Hoy nuestro sitio no tiene esto — es un bloque fuerte, traerlo como sección propia (no como grid de 4 cards iguales — variar el layout, ver criterio ya aplicado en `AJUSTES-v1-reducir-texto-y-jerarquia-visual.md`).
@@ -54,7 +67,7 @@ Todos a `https://wa.me/595991480481` con el texto correspondiente — mismo núm
 
 ## 3. Qué se mantiene sin cambios
 
-- `PortalMockup.jsx` — sigue siendo el diferencial más fuerte frente al sitio real (que no tiene nada parecido). No tocar.
+- `PortalMockup.jsx` — sigue siendo el diferencial más fuerte frente al sitio real (que no tiene nada parecido). Se mantiene la estructura (tabs ejecutivo/familia, KPIs), **excepto el gráfico de barras, que se rediseña — ver sección 4ter.**
 - Identidad visual completa — paleta `efi-dark`/`efi-gold`/`efi-emerald`, tipografía Plus Jakarta Sans + Cormorant Garamond, glassmorphism con criterio (no como default universal, según `AJUSTES-v1`).
 - Botón flotante de WhatsApp.
 
@@ -90,6 +103,21 @@ Copp prefiere el estilo visual del sitio real (más calmo, editorial) frente al 
 - Reemplazar cards repetidas por los layouts variados que ya pedía `AJUSTES-v1-reducir-texto-y-jerarquia-visual.md` (línea de tiempo, declaraciones tipográficas grandes, splits editoriales foto+texto) — extender ese criterio a TODA la página, no solo a las secciones que se habían tocado.
 - Priorizar fotografía real (las 3 imágenes del punto 4, más cualquier otra que encuentres explorando el sitio) por sobre íconos redondeados en card — la foto transmite calidez humana, el ícono transmite genérico-SaaS.
 - El `PortalMockup` sigue siendo el único lugar donde vale la pena mantener el efecto glass/gradiente fuerte — ahí sí tiene sentido, porque simula un producto real y es el pico de la experiencia (Peak-End Rule).
+
+---
+
+## 4ter. Rediseño del gráfico dentro del Portal (el momento WOW no convence)
+
+Feedback real de Copp: el gráfico de barras actual dentro de `PortalMockup.jsx` se ve "como si fuese Excel" — no transmite el momento sorpresa que tiene que transmitir.
+
+**Por qué importa (no es solo estética):** el portal es, por diseño, el nivel 3 de la Pirámide de la Felicidad de Hsieh — el "satisface necesidades no reconocidas" que nadie esperaba ver en la web de un estudio boutique. Un gráfico de barras genérico rompe esa promesa por el *Aesthetic-Usability Effect* de Yablonski: si la visualización se ve como una planilla cruda, el cerebro la lee como "output de datos", no como "producto premium" — exactamente lo contrario del mensaje central de eFI ("rigor corporativo aplicado a tu economía personal", no una plantilla genérica). Además rompe el Peak-End Rule: este es el cierre/pico de la experiencia de scroll, tiene que ser el momento más cuidado de toda la página, no el más plano.
+
+**Instrucción para Antigravity:**
+- Sacar el gráfico de barras estilo hoja de cálculo (barras rectas, grid de fondo, ejes tipo Excel).
+- Reemplazar por una visualización más editorial/premium — opciones válidas: curva de área suave con degradé bajo la línea (mostrando evolución de balance/ahorro mes a mes, sin grid duro ni ejes numéricos explícitos), o anillos/donuts de progreso por categoría con los números como protagonistas tipográficos en vez del gráfico. Elegir la que mejor se lea a simple vista, sin necesidad de leyenda.
+- Sin líneas de grid de fondo, sin ejes con números "tipo spreadsheet" — los datos se leen por forma y color, no por escala precisa (esto es un mockup de venta, no un dashboard analítico real).
+- Mantener la paleta ya definida en la sección 4bis (base neutra + dorado como acento) — el gráfico es el lugar donde más justificado está usar el dorado con fuerza, junto con el glassmorphism que ya tiene el portal.
+- Sigue siendo el único gráfico "real" de todo el sitio — todo lo demás (tabla de precios, comparativa) usa formato de texto/tabla simple, no chart.
 
 ---
 

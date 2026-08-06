@@ -295,65 +295,82 @@ export default function PortalMockup() {
 
                 </div>
 
-                {/* Simulated Power BI Graph Section */}
-                <div className="p-6 rounded-2xl bg-efi-card border border-white/10">
-                  <div className="flex items-center justify-between mb-6">
+                {/* Premium Area Curve Chart Visual (Section 4ter Redesign) */}
+                <div className="p-6 rounded-2xl bg-efi-card/90 border border-efi-gold/30 shadow-2xl relative overflow-hidden">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
                     <div>
-                      <h4 className="text-base font-serif font-semibold text-efi-sand">
-                        Evolución Mensual de Salud Financiera (Guaraníes)
+                      <h4 className="text-lg font-serif font-bold text-efi-sand">
+                        Evolución de Liquidez & Capacidad Patrimonial
                       </h4>
-                      <p className="text-xs text-efi-muted">Comportamiento de ingresos, gastos e inversión en los últimos 6 meses</p>
+                      <p className="text-xs text-efi-muted">Tendencia de flujo libre y acumulación mensual en Guaraníes</p>
                     </div>
-                    <span className="text-xs text-efi-gold font-mono bg-efi-gold/10 px-3 py-1 rounded-full border border-efi-gold/20">
-                      Vista Power BI eFI
-                    </span>
+                    <div className="flex items-center gap-3">
+                      <span className="text-xs font-semibold text-efi-gold bg-efi-gold/10 px-3 py-1 rounded-full border border-efi-gold/30 flex items-center gap-1.5">
+                        <span className="w-2 h-2 rounded-full bg-efi-gold animate-pulse"></span>
+                        Power BI Executive View
+                      </span>
+                    </div>
                   </div>
 
-                  {/* Simulated Bar Chart Visual */}
-                  <div className="h-48 flex items-end justify-between gap-3 pt-6 px-2 border-b border-white/10 pb-2">
-                    {[
-                      { month: 'Mar', val1: 65, val2: 40, val3: 25 },
-                      { month: 'Abr', val1: 70, val2: 42, val3: 28 },
-                      { month: 'May', val1: 68, val2: 39, val3: 29 },
-                      { month: 'Jun', val1: 82, val2: 44, val3: 38 },
-                      { month: 'Jul', val1: 85, val2: 43, val3: 42 },
-                      { month: 'Ago', val1: 92, val2: 45, val3: 47 },
-                    ].map((item, i) => (
-                      <div key={i} className="flex-1 flex flex-col items-center gap-2 group cursor-pointer">
-                        <div className="w-full flex items-end justify-center gap-1.5 h-36">
-                          <div 
-                            style={{ height: `${item.val1}%` }} 
-                            className="w-3 bg-efi-gold/40 rounded-t-sm group-hover:bg-efi-gold transition-colors"
-                            title={`Ingreso: Gs. ${item.val1 * 1000000}`}
-                          ></div>
-                          <div 
-                            style={{ height: `${item.val2}%` }} 
-                            className="w-3 bg-red-400/30 rounded-t-sm group-hover:bg-red-400/60 transition-colors"
-                            title={`Gastos: Gs. ${item.val2 * 1000000}`}
-                          ></div>
-                          <div 
-                            style={{ height: `${item.val3}%` }} 
-                            className="w-3 bg-efi-emerald-light/50 rounded-t-sm group-hover:bg-efi-emerald-light transition-colors"
-                            title={`Ahorro: Gs. ${item.val3 * 1000000}`}
-                          ></div>
-                        </div>
-                        <span className="text-[11px] text-efi-muted group-hover:text-efi-sand transition-colors font-medium">
-                          {item.month}
-                        </span>
-                      </div>
-                    ))}
+                  {/* SVG Area Chart */}
+                  <div className="relative h-48 w-full pt-4">
+                    <svg className="w-full h-full overflow-visible" viewBox="0 0 500 150" preserveAspectRatio="none">
+                      <defs>
+                        <linearGradient id="goldGradientArea" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0%" stopColor="#C5A880" stopOpacity="0.45" />
+                          <stop offset="100%" stopColor="#C5A880" stopOpacity="0.0" />
+                        </linearGradient>
+                        <linearGradient id="goldStrokeGrad" x1="0" y1="0" x2="1" y2="0">
+                          <stop offset="0%" stopColor="#9C7F53" />
+                          <stop offset="50%" stopColor="#C5A880" />
+                          <stop offset="100%" stopColor="#E2CA9D" />
+                        </linearGradient>
+                      </defs>
+
+                      {/* Area Fill */}
+                      <path
+                        d="M 0,110 Q 80,100 160,85 T 320,50 T 500,20 L 500,150 L 0,150 Z"
+                        fill="url(#goldGradientArea)"
+                      />
+
+                      {/* Glowing Line Stroke */}
+                      <path
+                        d="M 0,110 Q 80,100 160,85 T 320,50 T 500,20"
+                        fill="none"
+                        stroke="url(#goldStrokeGrad)"
+                        strokeWidth="3.5"
+                        strokeLinecap="round"
+                      />
+
+                      {/* Data Points */}
+                      {[
+                        { cx: 0, cy: 110, month: 'Mar' },
+                        { cx: 100, cy: 95, month: 'Abr' },
+                        { cx: 200, cy: 75, month: 'May' },
+                        { cx: 300, cy: 55, month: 'Jun' },
+                        { cx: 400, cy: 35, month: 'Jul' },
+                        { cx: 500, cy: 20, month: 'Ago' },
+                      ].map((pt, i) => (
+                        <g key={i} className="group cursor-pointer">
+                          <circle
+                            cx={pt.cx}
+                            cy={pt.cy}
+                            r="5"
+                            className="fill-efi-dark stroke-efi-gold stroke-[3] group-hover:r-7 transition-all"
+                          />
+                        </g>
+                      ))}
+                    </svg>
                   </div>
 
-                  <div className="flex items-center justify-center gap-6 mt-4 text-xs text-efi-muted">
-                    <div className="flex items-center gap-2">
-                      <span className="w-3 h-3 rounded-sm bg-efi-gold"></span> Ingresos Netos (Gs.)
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="w-3 h-3 rounded-sm bg-red-400/60"></span> Gastos Totales (Gs.)
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="w-3 h-3 rounded-sm bg-efi-emerald-light"></span> Excedente / Inversión (Gs.)
-                    </div>
+                  {/* Month X-Axis Labels */}
+                  <div className="flex justify-between items-center pt-4 border-t border-white/10 text-xs text-efi-muted font-medium">
+                    <span>Mar 2026</span>
+                    <span>Abr 2026</span>
+                    <span>May 2026</span>
+                    <span>Jun 2026</span>
+                    <span>Jul 2026</span>
+                    <span className="text-efi-gold font-bold">Ago 2026 (Actual)</span>
                   </div>
                 </div>
 
