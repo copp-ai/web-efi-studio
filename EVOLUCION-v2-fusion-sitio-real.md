@@ -71,6 +71,28 @@ Antigravity: descargá estas 3 fotos y usalas como placeholder temporal en las s
 
 ---
 
+## 4bis. Dirección visual — por qué bajamos el verde+dorado y qué ponemos en su lugar
+
+Copp prefiere el estilo visual del sitio real (más calmo, editorial) frente al actual de este prototipo (mucho verde esmeralda + dorado, patrón repetido de cards). Esto no es solo gusto — se apoya en 4 marcos:
+
+**Yablonski (Laws of UX):** el patrón de cards repetido en cada sección viola el *Von Restorff Effect* — si todo se ve igual (misma card, mismo ícono redondeado, mismo grid), nada se recuerda, nada es un pico. El *Aesthetic-Usability Effect* dice que una interfaz más calma se percibe como más confiable antes de que el usuario evalúe nada más — hoy el verde+dorado satura visualmente y compite contra sí mismo en vez de guiar la mirada.
+
+**Capote (La jornada del cliente):** el JTBD social de Valeria es que eFI se vea a la altura de su trayectoria corporativa (Nestlé, Samsung) — un combo verde+dorado con glassmorphism en todos lados lee más a "hecho con IA / fintech genérico" que a "rigor corporativo aplicado a tu economía personal" (frase textual del sitio real). "La IA es artificial, la emoción es natural" — la calidez visual (fotografía real, tipografía editorial, espacio en blanco) transmite lo humano; el efecto neón/glass en todo lado transmite lo sintético.
+
+**Dixon (The Effortless Experience):** menos "paradas" visuales para comparar (cards repetidas obligan al ojo a escanear y comparar constantemente) = menos esfuerzo percibido para entender la oferta. El sitio real fluye como relato (hero → filosofía → historia → servicios → metodología → testimonios → FAQ), no como una sucesión de grids.
+
+**Hsieh (Delivering Happiness):** el "WOW" tiene que ser UN pico, no todo el sitio a upgrade constante. Si todo brilla (verde+dorado+glass en cada sección), el verdadero momento sorpresa — el `PortalMockup` — pierde impacto porque no contrasta con nada. El resto del sitio tiene que estar tranquilo para que el portal se sienta como el nivel 3 de la Pirámide de la Felicidad.
+
+**Instrucción concreta para Antigravity:**
+- **Explorá directamente [efi-studio-website.vercel.app](https://efi-studio-website.vercel.app/) y [onboarding-flow-three.vercel.app](https://onboarding-flow-three.vercel.app/servicios) (inspección real del sitio en vivo — paleta de colores exacta, tipografía, espaciados, tratamiento de fotografía, jerarquía visual) y extraé de ahí los valores reales para aplicar, en vez de aproximar. Mismo criterio que ya usaste para extraer de un Figma — acá el "Figma" es el sitio productivo.**
+- Sacar el verde esmeralda (`efi-emerald`) como color de acento — queda solo como detalle mínimo si hace falta, no como protagonista.
+- Base neutra cálida (tonos `efi-sand`/crema/carbón, en línea con `efi-dark` pero sin el tinte verdoso) + el dorado (`efi-gold`) como ÚNICO acento, usado con moderación — reservarlo para CTAs y el momento de cierre, no para decorar cada sección. Ajustá los valores exactos de esta paleta a lo que efectivamente encuentres inspeccionando el sitio real, no a estos nombres de variable actuales si no coinciden.
+- Reemplazar cards repetidas por los layouts variados que ya pedía `AJUSTES-v1-reducir-texto-y-jerarquia-visual.md` (línea de tiempo, declaraciones tipográficas grandes, splits editoriales foto+texto) — extender ese criterio a TODA la página, no solo a las secciones que se habían tocado.
+- Priorizar fotografía real (las 3 imágenes del punto 4, más cualquier otra que encuentres explorando el sitio) por sobre íconos redondeados en card — la foto transmite calidez humana, el ícono transmite genérico-SaaS.
+- El `PortalMockup` sigue siendo el único lugar donde vale la pena mantener el efecto glass/gradiente fuerte — ahí sí tiene sentido, porque simula un producto real y es el pico de la experiencia (Peak-End Rule).
+
+---
+
 ## 5. Resultado esperado
 
 Un sitio único, propio, que cubre todo lo que hoy están cubriendo las dos apps del ex (marca + storytelling + precios + autodiagnóstico + booking) más el portal interactivo que ninguna de las dos tiene — sin depender de acceso a ningún repo ajeno. Queda listo para reemplazar ambas apps del ex cuando Valeria decida, con dominio propio.
