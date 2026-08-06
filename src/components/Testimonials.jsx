@@ -6,7 +6,7 @@ export default function Testimonials() {
       name: "María Fe Figueredo",
       role: "Cliente eFI Studio",
       quote: "Tenía temor de mostrar mis finanzas desordenadas, pero Valeria me hizo sentir super cómoda desde el minuto uno. Salí de la primera sesión con un panorama claro que nunca antes había tenido.",
-      highlight: "Sentirme cómoda sin sentirme juzgada"
+      highlight: "Claridad inmediata sin sentirse juzgada"
     },
     {
       name: "Fabiola Bogado",
@@ -20,26 +20,29 @@ export default function Testimonials() {
     {
       name: "Cliente eFI",
       role: "Profesional Independiente",
-      quote: "Valeria me ayudó a separar mis finanzas personales del negocio y a entender de verdad cuál era mi capacidad real de retiro mensual sin descapitalizarme.",
+      quote: "Valeria me ayudó a separar mis finanzas personales del negocio y a entender de verdad cuál era mi capacidad real de retiro mensual sin descapitalizarme."
     },
     {
       name: "Cliente eFI",
       role: "Ejecutivo Corporativo",
-      quote: "Increíble la claridad con la que salí de la Clarity Session de 90 minutos. Armamos la planilla completa y me dio el empujón exacto para poner en orden mis ahorros.",
+      quote: "Increíble la claridad con la que salí de la Clarity Session de 90 minutos. Armamos la planilla completa y me dio el empujón exacto para poner en orden mis ahorros."
     },
     {
       name: "Cliente eFI",
       role: "Familia / Pareja",
-      quote: "El portal y la metodología hacen que el seguimiento mensual sea simple y cero estresante. Logramos ponernos de acuerdo en las metas de la casa de forma neutral.",
+      quote: "El portal y la metodología hacen que el seguimiento mensual sea simple y cero estresante. Logramos ponernos de acuerdo en las metas de la casa de forma neutral."
     }
   ];
 
   return (
-    <section id="testimonios" className="py-24 bg-efi-dark relative border-t border-white/5">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="testimonios" className="py-28 bg-efi-dark relative border-t border-white/5 overflow-hidden">
+      {/* Background Glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-gold-glow pointer-events-none opacity-15 blur-3xl"></div>
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="max-w-2xl mx-auto text-center mb-16">
+        <div className="max-w-2xl mx-auto text-center mb-20">
           <span className="text-xs font-semibold uppercase tracking-widest text-efi-gold block mb-3">
             Prueba Social Real
           </span>
@@ -51,41 +54,47 @@ export default function Testimonials() {
           </p>
         </div>
 
-        {/* 1. Featured Editorial Quotes (María Fe Figueredo & Fabiola Bogado) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
+        {/* 1. Featured Editorial Statements (María Fe Figueredo & Fabiola Bogado) - Pure Typography, No Boxes */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24 items-start">
           {featuredTestimonials.map((item, idx) => (
-            <div key={idx} className="space-y-6 flex flex-col justify-between p-4">
-              <blockquote className="text-2xl sm:text-3xl font-serif italic text-efi-sand leading-relaxed">
+            <div key={idx} className="space-y-6">
+              <blockquote className="text-2xl sm:text-4xl font-serif font-light italic text-efi-sand leading-[1.35] tracking-tight">
                 "{item.quote}"
               </blockquote>
-              <div className="pt-4 border-t border-white/10">
-                <h4 className="text-xl font-serif font-bold text-efi-gold">
-                  {item.name}
-                </h4>
-                <p className="text-xs text-efi-muted uppercase font-semibold tracking-wider mt-1">
-                  {item.role} · <span className="text-efi-sand">{item.highlight}</span>
-                </p>
+              
+              <div className="flex items-center gap-3 pt-4 border-t border-efi-gold/30">
+                <span className="w-8 h-[1px] bg-efi-gold/50"></span>
+                <div>
+                  <h4 className="text-lg font-serif font-bold text-efi-gold">
+                    {item.name}
+                  </h4>
+                  <p className="text-xs text-efi-muted uppercase font-semibold tracking-wider">
+                    {item.role} · <span className="text-efi-sand font-normal">{item.highlight}</span>
+                  </p>
+                </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* 2. Secondary Streamlined Client Stories (Distinct visual weight) */}
+        {/* 2. Secondary Streamlined Stories - Unboxed Editorial List with Vertical Separators */}
         <div className="pt-12 border-t border-white/10">
-          <h3 className="text-xs font-semibold uppercase tracking-widest text-efi-gold mb-8 text-center md:text-left">
-            Más historias de éxito eFI
-          </h3>
+          <span className="text-xs font-semibold uppercase tracking-widest text-efi-gold block mb-10 text-center lg:text-left">
+            Más experiencias de clientes eFI
+          </span>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {secondaryTestimonials.map((item, idx) => (
               <div 
                 key={idx} 
-                className="space-y-3 p-6 rounded-2xl bg-efi-surface/40 border border-white/5 hover:border-efi-gold/20 transition-colors"
+                className={`space-y-4 ${
+                  idx > 0 ? 'md:border-l md:border-white/10 md:pl-8' : ''
+                }`}
               >
                 <p className="text-sm text-efi-muted leading-relaxed italic">
                   "{item.quote}"
                 </p>
-                <div className="pt-3 border-t border-white/5">
+                <div>
                   <span className="text-xs font-serif font-semibold text-efi-sand block">
                     {item.name}
                   </span>
