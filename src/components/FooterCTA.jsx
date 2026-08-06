@@ -22,9 +22,14 @@ export default function FooterCTA() {
             Empezá con una sesión de 90 minutos.
           </h2>
 
-          <p className="text-base sm:text-lg text-efi-muted max-w-2xl mx-auto mb-8">
-            Salís con tu panorama financiero organizado, tus prioridades claras y un plan concreto armado para tu año. Sin compromisos de largo plazo.
-          </p>
+          <div className="space-y-4 mb-8">
+            <p className="text-base sm:text-lg text-efi-muted max-w-2xl mx-auto">
+              Salís con tu panorama financiero organizado, tus prioridades claras y un plan concreto armado para tu año. Sin compromisos de largo plazo.
+            </p>
+            <p className="text-sm font-semibold text-efi-pine">
+              Cada mes que pasa sin un sistema es un mes más de decisiones tomadas a ciegas.
+            </p>
+          </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
@@ -34,7 +39,7 @@ export default function FooterCTA() {
               className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full text-sm font-semibold uppercase tracking-wider text-efi-sand bg-efi-pine hover:bg-efi-pine-hover hover:shadow-glow-pine hover:scale-[1.02] transition-all"
             >
               <MessageCircle className="w-4 h-4 fill-current" />
-              Agendar por WhatsApp con Valeria
+              Empecemos a ordenar tus números
               <ArrowRight className="w-4 h-4" />
             </a>
           </div>

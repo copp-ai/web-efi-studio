@@ -27,7 +27,7 @@ export default function ServicesCatalog() {
       price: "Gs. 2.900.000",
       period: "4 sesiones · 1 mes",
       highlight: false,
-      desc: "Acompañamiento personalizado para ejecutivos y profesionales que buscan estructurar su presupuesto y consolidar el hábito de ahorro.",
+      desc: "Proceso intensivo. Salís con tu presupuesto mensual definido y tu primera meta de ahorro con fecha.",
       features: [
         "4 sesiones individuales de seguimiento",
         "Diseño de sistema presupuestario a medida",
@@ -44,7 +44,7 @@ export default function ServicesCatalog() {
       price: "Gs. 4.900.000",
       period: "4 sesiones · Cobertura Familiar",
       highlight: false,
-      desc: "Facilitación neutral para alinear prioridades del hogar, acordar presupuestos comunes y planificar proyectos de vida juntos sin fricciones.",
+      desc: "Facilitación neutral. Salen con la distribución de gastos del hogar acordada y un plan de metas compartido por escrito.",
       features: [
         "4 sesiones conjuntas de facilitación",
         "Presupuesto familiar y distribución de gastos",
@@ -61,7 +61,7 @@ export default function ServicesCatalog() {
       price: "Gs. 1.200.000",
       period: "por mes (suscripción)",
       highlight: false,
-      desc: "Servicio continuo para quienes delegan por completo el procesamiento operativo de sus números con acceso exclusivo al portal eFI.",
+      desc: "Delegá la carga operativa. Recibís un flujo continuo de análisis y reportes de desvíos cada mes, sin tener que pedirlos.",
       features: [
         "Procesamiento operativo mensual de datos",
         "Reportes ejecutivos periódicos de rendimiento",
@@ -162,10 +162,15 @@ export default function ServicesCatalog() {
           ))}
         </div>
 
-        {/* Subtitle Guarantee Note */}
-        <div className="mt-12 text-center text-xs text-efi-muted flex items-center justify-center gap-2">
-          <ShieldCheck className="w-4 h-4 text-efi-pine" />
-          <span>Todos los programas incluyen 100% de confidencialidad y garantía de satisfacción eFI.</span>
+        {/* Subtitle Guarantee & Scarcity Note */}
+        <div className="mt-12 space-y-4">
+          <div className="text-center text-xs text-efi-muted flex flex-col sm:flex-row items-center justify-center gap-2">
+            <ShieldCheck className="w-4 h-4 text-efi-pine" />
+            <span>Todos los programas incluyen 100% de confidencialidad y garantía de satisfacción eFI.</span>
+          </div>
+          <div className="text-center text-xs font-semibold text-efi-pine tracking-wide">
+            Para sostener la calidad y la atención personalizada, trabajamos con un número limitado de cupos por mes.
+          </div>
         </div>
 
       </div>

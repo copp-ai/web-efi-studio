@@ -58,7 +58,7 @@ export default function SelfDiagnostic() {
         tag: "Recomendado para tu perfil",
         price: "Gs. 4.900.000",
         duration: "4 sesiones · Cobertura Familiar",
-        desc: "El programa diseñado para alinear prioridades del hogar, acordar presupuestos sin conflictos y estructurar metas de ahorro compartidas.",
+        desc: "Facilitación neutral. Salen con la distribución de gastos del hogar acordada y un plan de metas compartido por escrito.",
         whatsappUrl: "https://wa.me/595971791069?text=Hola%20Valeria,%20hice%20el%20autodiagn%C3%B3stico%20y%20quisiera%20empezar%20eFI%20Family%20Care"
       };
     }
@@ -69,7 +69,7 @@ export default function SelfDiagnostic() {
         tag: "Recomendado para tu perfil",
         price: "Gs. 1.200.000 / mes",
         duration: "Retainer Mensual Continuo",
-        desc: "La solución pensada para delegar la carga operativa del mes y recibir tableros ejecutivos periódicos con análisis de desvíos.",
+        desc: "Delegá la carga operativa. Recibís un flujo continuo de análisis y reportes de desvíos cada mes, sin tener que pedirlos.",
         whatsappUrl: "https://wa.me/595971791069?text=Hola%20Valeria,%20hice%20el%20autodiagn%C3%B3stico%20y%20quisiera%20consultar%20disponibilidad%20para%20eFI%20Wealth%20Flow"
       };
     }
@@ -80,7 +80,7 @@ export default function SelfDiagnostic() {
         tag: "Recomendado para tu perfil",
         price: "Gs. 2.900.000",
         duration: "4 sesiones · 1 mes de acompañamiento",
-        desc: "Proceso intensivo individual para ordenar el presupuesto personal, fijar la capacidad de ahorro mensual y establecer reglas claras.",
+        desc: "Proceso intensivo. Salís con tu presupuesto mensual definido y tu primera meta de ahorro con fecha.",
         whatsappUrl: "https://wa.me/595971791069?text=Hola%20Valeria,%20hice%20el%20autodiagn%C3%B3stico%20y%20quisiera%20empezar%20eFI%20Personal%20Finance"
       };
     }

@@ -23,8 +23,8 @@ export default function App() {
         <PhilosophyStrip />
         <PainPoints />
         <HowItWorks />
-        <ServicesCatalog />
         <SelfDiagnostic />
+        <ServicesCatalog />
         <PortalMockup />
         <Authority />
         <FounderStatement />
