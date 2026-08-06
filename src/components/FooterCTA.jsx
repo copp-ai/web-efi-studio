@@ -48,12 +48,10 @@ export default function FooterCTA() {
         {/* Footer Bottom Links & Copyright */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-efi-muted">
           
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-efi-card border border-efi-gold/30 flex items-center justify-center">
-              <span className="font-serif font-bold text-efi-gold">eFI</span>
-            </div>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-0.5 sm:gap-2">
             <span className="font-serif text-sm text-efi-sand font-semibold">eFI Studio</span>
-            <span className="text-efi-subtle">| Finanzas Boutique</span>
+            <span className="hidden sm:inline text-efi-subtle">·</span>
+            <span className="text-xs text-efi-subtle tracking-widest uppercase">Finanzas Boutique</span>
           </div>
 
           <p>© {new Date().getFullYear()} eFI Studio. Todos los derechos reservados. Asunción, Paraguay.</p>
