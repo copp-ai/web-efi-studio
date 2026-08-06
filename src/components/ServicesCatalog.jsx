@@ -86,7 +86,7 @@ export default function ServicesCatalog() {
             Planes diseñados para cada etapa de tu vida
           </h2>
           <p className="text-base text-efi-muted">
-            Transparencia total en precios en Guaraníes y alcance claro de cada servicio. Sin sorpresas ni costos ocultos.
+            Transparencia total en precios y alcance claro de cada servicio. Sin sorpresas ni costos ocultos.
           </p>
         </div>
 
@@ -163,12 +163,12 @@ export default function ServicesCatalog() {
         </div>
 
         {/* Subtitle Guarantee & Scarcity Note */}
-        <div className="mt-12 space-y-4">
-          <div className="text-center text-xs text-efi-muted flex flex-col sm:flex-row items-center justify-center gap-2">
-            <ShieldCheck className="w-4 h-4 text-efi-pine" />
+        <div className="mt-12 space-y-3">
+          <div className="text-center text-sm text-efi-muted flex flex-col sm:flex-row items-center justify-center gap-2">
+            <ShieldCheck className="w-5 h-5 text-efi-pine shrink-0" />
             <span>Todos los programas incluyen 100% de confidencialidad y garantía de satisfacción eFI.</span>
           </div>
-          <div className="text-center text-xs font-semibold text-efi-pine tracking-wide">
+          <div className="text-center text-base font-semibold text-efi-pine tracking-wide">
             Para sostener la calidad y la atención personalizada, trabajamos con un número limitado de cupos por mes.
           </div>
         </div>

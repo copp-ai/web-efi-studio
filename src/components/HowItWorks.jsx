@@ -10,7 +10,7 @@ export default function HowItWorks() {
     {
       number: "02",
       title: "Visibilizamos",
-      description: "Traducimos números complejos a un tablero ejecutivo visual e intuitivo en Guaraníes."
+      description: "Traducimos números complejos a un tablero ejecutivo visual e intuitivo."
     },
     {
       number: "03",

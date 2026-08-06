@@ -302,7 +302,7 @@ export default function PortalMockup() {
                       <h4 className="text-lg font-serif font-bold text-efi-sand">
                         Evolución de Liquidez & Capacidad Patrimonial
                       </h4>
-                      <p className="text-xs text-efi-muted">Tendencia de flujo libre y acumulación mensual en Guaraníes</p>
+                      <p className="text-xs text-efi-muted">Tendencia de flujo libre y acumulación mensual</p>
                     </div>
                     <div className="flex items-center gap-3">
                       <span className="text-xs font-semibold text-efi-pine bg-efi-pine/10 px-3 py-1 rounded-full border border-efi-pine/30 flex items-center gap-1.5">
@@ -385,7 +385,7 @@ export default function PortalMockup() {
                   {/* Detailed Expense Breakdown Card */}
                   <div className="p-6 rounded-2xl bg-efi-card border border-white/10">
                     <h4 className="text-lg font-serif font-semibold text-efi-sand mb-4">
-                      Desglose de Salida Mensual (Guaraníes)
+                      Desglose de Salida Mensual
                     </h4>
 
                     <div className="space-y-4">
@@ -438,7 +438,7 @@ export default function PortalMockup() {
                         Criterio de Asignación Boutique
                       </h4>
                       <p className="text-xs text-efi-muted leading-relaxed mb-4">
-                        A diferencia de las planillas genéricas, en eFI separaremos estrictamente tus gastos estructurales de tus metas patrimoniales en Guaraníes, garantizando que tu estilo de vida no comprometa tu libertad futura.
+                        A diferencia de las planillas genéricas, en eFI separaremos estrictamente tus gastos estructurales de tus metas patrimoniales, garantizando que tu estilo de vida no comprometa tu libertad futura.
                       </p>
                     </div>
 
@@ -523,7 +523,7 @@ export default function PortalMockup() {
             <div className="p-4 rounded-xl bg-efi-dark/60 border border-efi-pine/20 text-center flex flex-col sm:flex-row items-center justify-between gap-3">
               <span className="text-xs text-efi-muted flex items-center gap-2">
                 <Lock className="w-3.5 h-3.5 text-efi-pine" />
-                Vista previa conceptual interactiva para clientes eFI Studio. Todos los datos están cifrados en Guaraníes (Gs.).
+                Vista previa conceptual interactiva para clientes eFI Studio. Todos los datos son confidenciales y están cifrados.
               </span>
               <a 
                 href="#servicios"
