@@ -17,15 +17,15 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.glass-panel-gold {
+.glass-panel-pine {
   background: rgba(22, 37, 41, 0.85);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(212, 175, 55, 0.25);
+  border: 1px solid rgba(43, 65, 56, 0.45);
 }
 
-.text-gold-gradient {
-  background: linear-gradient(135deg, #FFF0C3 0%, #D4AF37 50%, #9A7B1C 100%);
+.text-pine-gradient {
+  background: linear-gradient(135deg, #C8DDD5 0%, #2B4138 60%, #1A2B23 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -48,5 +48,5 @@
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #D4AF37;
+  background: #2B4138;
 }

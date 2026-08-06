@@ -1,8 +1,8 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import PhilosophyStrip from './components/PhilosophyStrip';
 import PainPoints from './components/PainPoints';
-import BrandPhilosophy from './components/BrandPhilosophy';
 import HowItWorks from './components/HowItWorks';
 import ServicesCatalog from './components/ServicesCatalog';
 import SelfDiagnostic from './components/SelfDiagnostic';
@@ -16,12 +16,12 @@ import FloatingWhatsApp from './components/FloatingWhatsApp';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-efi-dark text-efi-sand font-sans selection:bg-efi-gold/30 selection:text-efi-gold-light">
+    <div className="min-h-screen bg-efi-dark text-efi-sand font-sans selection:bg-efi-pine/30 selection:text-efi-pine-light">
       <Navbar />
       <main>
         <Hero />
+        <PhilosophyStrip />
         <PainPoints />
-        <BrandPhilosophy />
         <HowItWorks />
         <ServicesCatalog />
         <SelfDiagnostic />

@@ -32,13 +32,13 @@ export default function BrandPhilosophy() {
   return (
     <section id="filosofia" className="py-24 bg-efi-dark relative border-t border-white/5 overflow-hidden">
       {/* Subtle Background Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-gold-glow pointer-events-none opacity-20 blur-3xl"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-pine-glow pointer-events-none opacity-20 blur-3xl"></div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <span className="text-xs font-semibold uppercase tracking-widest text-efi-gold block mb-3">
+          <span className="text-xs font-semibold uppercase tracking-widest text-efi-pine block mb-3">
             Filosofía de Trabajo
           </span>
           <h2 className="text-3xl sm:text-5xl font-serif font-bold text-efi-sand mb-4">
@@ -54,7 +54,7 @@ export default function BrandPhilosophy() {
           
           {/* Editorial Photo Frame */}
           <div className="lg:col-span-5 relative group hidden lg:block">
-            <div className="rounded-3xl overflow-hidden border border-efi-gold/30 shadow-2xl relative h-[420px]">
+            <div className="rounded-3xl overflow-hidden border border-white/10 shadow-2xl relative h-[420px]">
               <img 
                 src="/assets/grid-photo-1.jpg" 
                 alt="Filosofía eFI Studio" 
@@ -62,7 +62,7 @@ export default function BrandPhilosophy() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-efi-dark/90 via-efi-dark/30 to-transparent"></div>
               <div className="absolute bottom-6 left-6 right-6">
-                <span className="text-xs font-semibold uppercase tracking-wider text-efi-gold block mb-1">
+                <span className="text-xs font-semibold uppercase tracking-wider text-efi-pine block mb-1">
                   Rigor & Tranquilidad
                 </span>
                 <p className="text-sm font-serif font-medium text-efi-sand">
@@ -79,15 +79,15 @@ export default function BrandPhilosophy() {
               return (
                 <div 
                   key={idx}
-                  className="group p-6 rounded-2xl bg-efi-surface/60 border border-white/10 hover:border-efi-gold/40 transition-all duration-300 relative overflow-hidden"
+                  className="group p-6 rounded-2xl bg-efi-surface/60 border border-white/10 hover:border-efi-pine/40 transition-all duration-300 relative overflow-hidden"
                 >
-                  <div className="w-10 h-10 rounded-xl bg-efi-card border border-efi-gold/30 flex items-center justify-center mb-4 group-hover:border-efi-gold group-hover:bg-efi-gold/10 transition-colors shadow-lg">
-                    <IconComponent className="w-5 h-5 text-efi-gold" />
+                  <div className="w-10 h-10 rounded-xl bg-efi-card border border-white/10 flex items-center justify-center mb-4 group-hover:border-efi-pine group-hover:bg-efi-pine/10 transition-colors shadow-lg">
+                    <IconComponent className="w-5 h-5 text-efi-pine" />
                   </div>
-                  <span className="text-[11px] font-semibold text-efi-gold uppercase tracking-wider block mb-1">
+                  <span className="text-[11px] font-semibold text-efi-pine uppercase tracking-wider block mb-1">
                     {pillar.subtitle}
                   </span>
-                  <h3 className="text-xl font-serif font-bold text-efi-sand mb-2 group-hover:text-efi-gold-light transition-colors">
+                  <h3 className="text-xl font-serif font-bold text-efi-sand mb-2">
                     {pillar.title}
                   </h3>
                   <p className="text-xs text-efi-muted leading-relaxed">

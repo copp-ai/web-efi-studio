@@ -84,7 +84,21 @@ Antigravity: descargá estas 3 fotos y usalas como placeholder temporal en las s
 
 ---
 
+## 4nonies. CORRECCIÓN FINAL de paleta — el sitio real no usa dorado, usa un verde oscuro apagado
+
+**Esto reemplaza la indicación de dorado de las secciones 4bis y 4octies — no uses dorado en ningún lado.** Revisando bien el sitio real de Valeria (screenshot en mano): no hay dorado en ninguna parte. Fondo oscuro neutro, tipografía serif itálica en blanco/crema para el título, botones sobrios (uno outline blanco, uno sólido en un verde oscuro apagado — no el verde esmeralda brillante `efi-emerald` que teníamos antes, es un verde mucho más apagado tipo pino/bosque), y el panel de Filosofía usa ese mismo verde oscuro como fondo sólido.
+
+**Instrucción para Antigravity:**
+- Sacar el dorado (`efi-gold`) de TODO el sitio — botones, íconos, badges, bordes, precios, gráfico del portal, todo. No queda ningún uso de dorado.
+- Nuevo acento único: un verde oscuro apagado (tipo pino/bosque — bastante más desaturado y oscuro que el `efi-emerald` original, revisar el tono exacto explorando el sitio real en vivo como ya se pidió en el Paso 0). Se usa con la misma moderación que se pedía para el dorado en 4octies: un único CTA principal por sección, el acento del `PortalMockup`, y el indicador de plan recomendado — nada más.
+- Todo lo demás queda en la base neutra (fondo oscuro, texto sand/crema/blanco, grises muted) — sin colores de acento decorando íconos, bullets, badges o bordes sueltos.
+- Los botones secundarios (tipo "Conocé los servicios") van en outline blanco/neutro, no en color — solo el botón de acción principal de cada sección lleva el verde.
+
+---
+
 ## 4bis. Dirección visual — por qué bajamos el verde+dorado y qué ponemos en su lugar
+
+**⚠️ La recomendación de color de esta sección quedó superada por la sección 4nonies (sin dorado, verde oscuro apagado como único acento) — el diagnóstico y los marcos teóricos de acá siguen valiendo, pero el color final es el de 4nonies.**
 
 Copp prefiere el estilo visual del sitio real (más calmo, editorial) frente al actual de este prototipo (mucho verde esmeralda + dorado, patrón repetido de cards). Esto no es solo gusto — se apoya en 4 marcos:
 
@@ -133,6 +147,65 @@ Feedback real de Copp: la sección de testimonios se ve genérica/sintética —
 - Sacar (o rediseñar) el ícono de avatar circular con iniciales repetido en las 5 — es otro elemento "UI kit" que se ve igual en cualquier landing genérica. Priorizar el nombre real en texto (María Fe Figueredo, Fabiola Bogado ya son nombres reales — dejarlos protagonistas) antes que un avatar decorativo.
 - Achicar el tamaño general de las cards que se mantengan — el testimonio anónimo ("Cliente eFI, Programa Individual") no necesita el mismo peso visual que uno con nombre real; usar tamaños distintos ayuda a que se sienta curado a mano, no generado en lote.
 - Mantener el texto de las citas tal cual — son reales, no reescribir.
+
+---
+
+## 4quinquies. Simplificar el Navbar (sobrecargado + usa un logo que no es de eFI)
+
+Feedback real de Copp: el navbar actual está muy cargado, y usa un ícono/logo en caja redondeada con "eFI" en degradé que **no es un logo real de la marca** — el sitio real de Valeria no usa ningún logo/ícono, solo el texto "eFI Studio" como wordmark.
+
+**Qué tiene hoy nuestro navbar (`Navbar.jsx`):** logo-caja con ícono + "eFI Studio" + subtítulo "Finanzas Boutique" + 7 links (Filosofía, Metodología, Programas & Precios, Autodiagnóstico, Portal eFI, Testimonios, FAQ) + 1 link destacado en pill + botón CTA de WhatsApp + versión mobile con todo eso repetido en drawer.
+
+**Por qué está mal (Yablonski):** 7 opciones de navegación superan cómodamente Miller's Law (7±2, y para un navbar el número sano es más cerca de 4-5) — cada link extra es más carga cognitiva antes de que el usuario llegue al contenido. El sitio real de Valeria, en cambio, tiene solo 5 links + 1 CTA — que es literalmente el patrón que describe Jakob's Law (lo que el usuario ya espera de cualquier sitio de servicios profesionales).
+
+**Instrucción para Antigravity:**
+- Sacar el ícono/logo en caja — reemplazar por wordmark de texto simple "eFI Studio", igual que el sitio real. Sacar también el subtítulo "Finanzas Boutique" si suma carga visual innecesaria al navbar (puede vivir en el footer, no hace falta repetirlo arriba).
+- Reducir los links a lo esencial — sugerencia de consolidación: Filosofía + Metodología pueden ir bajo un solo link tipo "Cómo trabajamos" (o eliminarse del navbar y quedar solo como anclas dentro del scroll, sin link explícito), sacar el highlight especial de "Portal eFI" (queda como link normal, no como pill destacada — no hace falta forzar la atención ahí desde el navbar), dejar como núcleo: **Servicios/Precios, Autodiagnóstico, Testimonios, FAQ** + 1 CTA.
+- Mantener un solo botón de acción claro (CTA de WhatsApp o "Empezar hoy"), no múltiples llamados a la acción compitiendo en la misma barra.
+- Aplicar el mismo criterio en la versión mobile (drawer) — no repetir ahí toda la lista larga si ya se acortó arriba.
+
+---
+
+## 4sexies. Sacar el mismo logo falso del Footer (`FooterCTA.jsx`)
+
+Mismo problema que el Navbar (sección 4quinquies), esta vez en el pie de página: `FooterCTA.jsx` tiene una caja `rounded-lg` con "eFI" adentro simulando un logo que no existe en la marca real.
+
+**Instrucción para Antigravity:**
+- Sacar por completo el `<div>` de la caja/ícono con "eFI" en `FooterCTA.jsx` (el bloque `w-8 h-8 rounded-lg bg-efi-card border border-efi-gold/30...`).
+- Dejar únicamente el wordmark de texto: "eFI Studio" — mismo criterio que ya se aplicó en el Navbar, coherencia entre header y footer.
+- El subtítulo "Finanzas Boutique" puede quedarse acá (a diferencia del navbar) — el footer es un lugar razonable para esa aclaración, ya que no compite con la carga cognitiva del área de navegación.
+- Revisar si queda algún otro lugar del sitio con esta misma caja/ícono de "eFI" (búsqueda rápida por el patrón `rounded-lg` + texto "eFI" o `rounded-xl` + texto "eFI" en el resto de los componentes) y sacarlo también — que no sea un ajuste puntual de un solo componente si el patrón se repite en más lugares.
+
+---
+
+## 4septies. La franja de fotos + filosofía justo después del Hero (bajar la intensidad de venta al inicio)
+
+Feedback real de Copp, mirando el sitio real de Valeria: apenas termina el Hero, antes de vender nada, hay una franja de ancho completo en 3 columnas — foto editorial en blanco y negro / panel oscuro con la Filosofía (eyebrow "Filosofía", headline corto en serif "El orden es progreso.", 1-2 líneas de texto chico) / otra foto editorial en blanco y negro. Se ve calma, humana, nada vendedora. Nuestro sitio, en cambio, va directo del Hero a `PainPoints.jsx` — arranca "con ganas de vender" apenas termina el título.
+
+**Por qué importa (no es solo copiar un layout):** es la misma lógica de Capote y Dixon que ya venimos aplicando — la emoción y la confianza se construyen antes de pedir nada, y un respiro editorial entre el Hero y el resto del pitch reduce el esfuerzo percibido de "me están vendiendo algo" apenas entrás al sitio. También calza con Hsieh: el WOW no es deslumbrar de entrada con CTAs y stats, es dejar que la marca respire primero.
+
+**Instrucción para Antigravity — no clonar el layout exacto, es el mismo propósito con recursos propios:**
+- Insertar una sección nueva, de ancho completo, inmediatamente después del `Hero.jsx` y antes de `PainPoints.jsx` (o la que sea la siguiente sección hoy): no hace falta el grid de 3 columnas con 2 fotos — alcanza con **una sola imagen de fondo de ancho completo** (buscar y descargar ahora una foto de banco de imágenes gratuito tipo Unsplash/Pexels, en blanco y negro o desaturada, temática de organización/documentos/calma — no usar las 3 fotos hotlinkeadas del sitio del ex para este bloque, esas quedan reservadas para fundadora/FAQ como ya se pidió en la sección 4) con overlay oscuro y la Filosofía superpuesta (eyebrow "Filosofía" + headline corto en serif, tipo "El orden es progreso." + texto de apoyo chico debajo, elegir 1 sola idea-fuerza, no las 4 juntas).
+- Sin CTA ni botón en este bloque — este momento no vende, solo transmite. El objetivo es el respiro/pausa editorial entre el Hero y el resto del pitch, no la réplica exacta del layout de su sitio.
+- De paso, revisar el Hero mismo: hoy tiene CTA con gradiente dorado fuerte + banner de privacidad + 3 bullets de autoridad, todo apilado — es mucho "empuje de venta" antes de que el usuario llegue siquiera a esta franja calma. Aligerar el Hero para que combine mejor con el respiro que viene justo después: los 2 botones pueden ser más discretos (uno outline, uno sólido pero no en gradiente dorado grande — ver el hero real: "Conocé los servicios" en outline + "Autodiagnóstico" en pill sólida simple), y evaluar si el banner de privacidad y los 3 bullets de autoridad pueden bajar de posición (van mejor más adelante en la página que compitiendo con el título principal).
+
+---
+
+## 4octies. El dorado se aplicó en todos lados — bajarlo a un uso realmente mínimo
+
+**⚠️ Superada por 4nonies: no es "bajar el dorado a un uso mínimo", es sacarlo por completo y reemplazarlo por el verde oscuro apagado. El diagnóstico de por qué un acento repetido en todos lados deja de funcionar sigue siendo válido, solo cambia qué color va en los lugares puntuales.**
+
+Feedback real de Copp: pese al ajuste de la sección 4bis, el sitio sigue con dorado fuerte y chillón en todas partes. Lo que pasó: "dorado como único acento" se interpretó como "reemplazar el verde por dorado en todo lo que antes tenía color" — el resultado es el mismo problema de saturación de antes, solo que con un color en vez de dos.
+
+**Por qué falla esto (Von Restorff, otra vez):** un acento solo funciona como acento si es escaso. Si el dorado está en el badge, el ícono, el borde, el bullet, el precio, el botón y el título, deja de leerse como "esto es lo importante" — vuelve a ser ruido de fondo, exactamente lo que se quería evitar.
+
+**Instrucción para Antigravity — regla dura, no una sugerencia de estilo:**
+Recorré TODO el sitio (Hero, Navbar, PainPoints, HowItWorks, ServicesCatalog, Authority, Footer, la nueva franja de Filosofía, FAQ) y sacá el dorado de todo excepto estos usos puntuales:
+1. El botón de acción principal de cada sección (un único CTA por pantalla, no todos los CTAs secundarios).
+2. El acento del `PortalMockup` (gráfico + detalles del mockup, sección 4ter) — ahí ya está justificado que sea el elemento más rico visualmente de la página.
+3. Un único indicador del plan "más elegido" en la tabla de precios (borde o badge, no ambos a la vez).
+
+**Todo lo demás pasa a neutro** (blanco/sand/gris muted, según la paleta base ya definida en 4bis): íconos (ShieldCheck, Check, bullets de autoridad), badges/eyebrows en mayúscula, bordes de cards, precios mostrados, hovers, subrayados, separadores. Si en la revisión un elemento no es "el CTA principal" ni "el portal" ni "el badge de recomendado", no lleva dorado — sin excepciones puntuales por sección.
 
 ---
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, ArrowRight, Check, ShieldCheck, Clock, Users, BarChart3 } from 'lucide-react';
+import { Sparkles, ArrowRight, Check, ShieldCheck } from 'lucide-react';
 
 export default function ServicesCatalog() {
   const programs = [
@@ -79,7 +79,7 @@ export default function ServicesCatalog() {
         
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <span className="text-xs font-semibold uppercase tracking-widest text-efi-gold block mb-3">
+          <span className="text-xs font-semibold uppercase tracking-widest text-efi-pine block mb-3">
             Programas & Tabla Comparativa
           </span>
           <h2 className="text-3xl sm:text-5xl font-serif font-bold text-efi-sand mb-4">
@@ -97,19 +97,19 @@ export default function ServicesCatalog() {
               key={prog.id}
               className={`flex flex-col justify-between p-7 rounded-3xl transition-all duration-300 relative ${
                 prog.highlight
-                  ? 'bg-efi-card border-2 border-efi-gold shadow-glow-gold scale-[1.02]'
-                  : 'bg-efi-surface/70 border border-white/10 hover:border-efi-gold/40'
+                  ? 'bg-efi-card border-2 border-efi-pine shadow-glow-pine scale-[1.02]'
+                  : 'bg-efi-surface/70 border border-white/10 hover:border-efi-pine/40'
               }`}
             >
               {prog.highlight && (
-                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-efi-gold text-efi-dark font-bold text-[10px] uppercase tracking-wider flex items-center gap-1 shadow-lg">
+                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-efi-pine text-efi-sand font-bold text-[10px] uppercase tracking-wider flex items-center gap-1 shadow-lg">
                   <Sparkles className="w-3 h-3" />
                   Más Elegido
                 </div>
               )}
 
               <div>
-                <span className="text-[11px] font-semibold text-efi-gold uppercase tracking-wider block mb-2">
+                <span className="text-[11px] font-semibold text-efi-pine uppercase tracking-wider block mb-2">
                   {prog.badge}
                 </span>
 
@@ -118,7 +118,7 @@ export default function ServicesCatalog() {
                 </h3>
 
                 <div className="mb-4">
-                  <span className="block font-serif text-3xl font-bold text-efi-gold">
+                  <span className="block font-serif text-3xl font-bold text-efi-sand">
                     {prog.price}
                   </span>
                   <span className="text-xs text-efi-muted uppercase font-semibold">
@@ -134,7 +134,7 @@ export default function ServicesCatalog() {
                 <ul className="space-y-3 mb-8">
                   {prog.features.map((feat, idx) => (
                     <li key={idx} className="flex items-start gap-2.5 text-xs text-efi-sand leading-tight">
-                      <Check className="w-4 h-4 text-efi-gold shrink-0 mt-0.5" />
+                      <Check className="w-4 h-4 text-efi-pine shrink-0 mt-0.5" />
                       <span>{feat}</span>
                     </li>
                   ))}
@@ -149,8 +149,8 @@ export default function ServicesCatalog() {
                   rel="noopener noreferrer"
                   className={`w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all ${
                     prog.highlight
-                      ? 'text-efi-dark bg-gradient-to-r from-efi-gold-light via-efi-gold to-efi-gold-hover hover:shadow-glow-gold'
-                      : 'text-efi-sand bg-efi-card hover:bg-efi-gold/20 hover:text-efi-gold border border-white/10'
+                      ? 'text-efi-sand bg-efi-pine hover:bg-efi-pine-hover hover:shadow-glow-pine'
+                      : 'text-efi-sand bg-efi-card hover:bg-efi-pine/20 hover:text-efi-pine-light border border-white/10'
                   }`}
                 >
                   {prog.ctaText}
@@ -164,7 +164,7 @@ export default function ServicesCatalog() {
 
         {/* Subtitle Guarantee Note */}
         <div className="mt-12 text-center text-xs text-efi-muted flex items-center justify-center gap-2">
-          <ShieldCheck className="w-4 h-4 text-efi-gold" />
+          <ShieldCheck className="w-4 h-4 text-efi-pine" />
           <span>Todos los programas incluyen 100% de confidencialidad y garantía de satisfacción eFI.</span>
         </div>
 

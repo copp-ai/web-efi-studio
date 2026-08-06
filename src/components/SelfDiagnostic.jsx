@@ -109,7 +109,7 @@ export default function SelfDiagnostic() {
         
         {/* Section Header */}
         <div className="text-center mb-12">
-          <span className="text-xs font-semibold uppercase tracking-widest text-efi-gold block mb-3">
+          <span className="text-xs font-semibold uppercase tracking-widest text-efi-pine block mb-3">
             Autodiagnóstico Interactivo
           </span>
           <h2 className="text-3xl sm:text-5xl font-serif font-bold text-efi-sand mb-4">
@@ -127,14 +127,14 @@ export default function SelfDiagnostic() {
             /* Active Question Step */
             <div>
               {/* Progress Bar */}
-              <div className="flex items-center justify-between text-xs font-semibold text-efi-gold uppercase tracking-wider mb-6">
+              <div className="flex items-center justify-between text-xs font-semibold text-efi-pine uppercase tracking-wider mb-6">
                 <span>Paso {step + 1} de {questions.length}</span>
                 <span>{Math.round(((step + 1) / questions.length) * 100)}% Completado</span>
               </div>
 
               <div className="w-full bg-white/10 h-1.5 rounded-full overflow-hidden mb-8">
                 <div 
-                  className="bg-efi-gold h-full transition-all duration-300"
+                  className="bg-efi-pine h-full transition-all duration-300"
                   style={{ width: `${((step + 1) / questions.length) * 100}%` }}
                 />
               </div>
@@ -153,17 +153,17 @@ export default function SelfDiagnostic() {
                   <button
                     key={opt.id}
                     onClick={() => handleSelect(questions[step].id, opt.id)}
-                    className="w-full text-left p-5 rounded-2xl bg-efi-card border border-white/10 hover:border-efi-gold hover:bg-efi-card/90 transition-all group flex items-start justify-between gap-4"
+                    className="w-full text-left p-5 rounded-2xl bg-efi-card border border-white/10 hover:border-efi-pine hover:bg-efi-card/90 transition-all group flex items-start justify-between gap-4"
                   >
                     <div>
-                      <h4 className="text-lg font-serif font-bold text-efi-sand group-hover:text-efi-gold transition-colors">
+                      <h4 className="text-lg font-serif font-bold text-efi-sand group-hover:text-efi-pine-light transition-colors">
                         {opt.label}
                       </h4>
                       <p className="text-sm text-efi-muted mt-1 leading-relaxed">
                         {opt.desc}
                       </p>
                     </div>
-                    <ArrowRight className="w-5 h-5 text-efi-muted group-hover:text-efi-gold group-hover:translate-x-1 transition-all shrink-0 mt-1" />
+                    <ArrowRight className="w-5 h-5 text-efi-muted group-hover:text-efi-pine group-hover:translate-x-1 transition-all shrink-0 mt-1" />
                   </button>
                 ))}
               </div>
@@ -172,7 +172,7 @@ export default function SelfDiagnostic() {
           ) : (
             /* Recommendation Result View */
             <div className="text-center space-y-6">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-efi-gold/20 border border-efi-gold/40 text-efi-gold text-xs font-semibold uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-efi-pine/20 border border-efi-pine/40 text-efi-pine-light text-xs font-semibold uppercase tracking-wider">
                 <CheckCircle2 className="w-4 h-4" />
                 {recommendation.tag}
               </div>
@@ -181,8 +181,8 @@ export default function SelfDiagnostic() {
                 {recommendation.title}
               </h3>
 
-              <div className="inline-block bg-efi-card px-6 py-3 rounded-2xl border border-efi-gold/30">
-                <span className="block font-serif text-3xl font-bold text-efi-gold">
+              <div className="inline-block bg-efi-card px-6 py-3 rounded-2xl border border-white/10">
+                <span className="block font-serif text-3xl font-bold text-efi-sand">
                   {recommendation.price}
                 </span>
                 <span className="text-xs text-efi-muted uppercase font-semibold">
@@ -199,7 +199,7 @@ export default function SelfDiagnostic() {
                   href={recommendation.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-xs font-semibold uppercase tracking-wider text-efi-dark bg-gradient-to-r from-efi-gold-light via-efi-gold to-efi-gold-hover hover:shadow-glow-gold transition-all"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-xs font-semibold uppercase tracking-wider text-efi-sand bg-efi-pine hover:bg-efi-pine-hover hover:shadow-glow-pine transition-all"
                 >
                   Agendar este programa por WhatsApp
                   <ArrowRight className="w-4 h-4" />

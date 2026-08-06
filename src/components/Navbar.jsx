@@ -35,7 +35,7 @@ export default function Navbar() {
           
           {/* Wordmark */}
           <a href="#" className="group">
-            <span className="font-serif font-bold text-2xl text-efi-sand tracking-wide group-hover:text-efi-gold transition-colors duration-200">
+            <span className="font-serif font-bold text-2xl text-efi-sand tracking-wide group-hover:text-efi-pine transition-colors duration-200">
               eFI Studio
             </span>
           </a>
@@ -59,7 +59,7 @@ export default function Navbar() {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider text-efi-dark bg-gradient-to-r from-efi-gold-light via-efi-gold to-efi-gold-hover hover:shadow-glow-gold hover:scale-[1.02] transition-all duration-200"
+              className="inline-flex items-center justify-center gap-2 px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider text-efi-sand bg-efi-pine hover:bg-efi-pine-hover hover:shadow-glow-pine hover:scale-[1.02] transition-all duration-200"
             >
               Clarity Session
               <ArrowRight className="w-3.5 h-3.5" />
@@ -69,7 +69,7 @@ export default function Navbar() {
           {/* Mobile Menu Toggle */}
           <button 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 text-efi-sand hover:text-efi-gold transition-colors"
+            className="lg:hidden p-2 text-efi-sand hover:text-efi-pine transition-colors"
             aria-label="Menu"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -85,7 +85,7 @@ export default function Navbar() {
               key={idx}
               href={link.href}
               onClick={() => setMobileMenuOpen(false)}
-              className="block text-base py-2 text-efi-sand hover:text-efi-gold transition-colors"
+              className="block text-base py-2 text-efi-sand hover:text-efi-pine transition-colors"
             >
               {link.name}
             </a>
@@ -95,7 +95,7 @@ export default function Navbar() {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-full text-xs font-semibold uppercase tracking-wider text-efi-dark bg-efi-gold"
+              className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-full text-xs font-semibold uppercase tracking-wider text-efi-sand bg-efi-pine"
             >
               Clarity Session
               <ArrowRight className="w-4 h-4" />

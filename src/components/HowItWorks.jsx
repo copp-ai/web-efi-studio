@@ -30,7 +30,7 @@ export default function HowItWorks() {
         
         {/* Header */}
         <div className="max-w-2xl mx-auto text-center mb-16">
-          <span className="text-xs font-semibold uppercase tracking-widest text-efi-gold block mb-3">
+          <span className="text-xs font-semibold uppercase tracking-widest text-efi-pine block mb-3">
             Metodología eFI
           </span>
           <h2 className="text-3xl sm:text-5xl font-serif font-bold text-efi-sand mb-4">
@@ -48,11 +48,11 @@ export default function HowItWorks() {
               
               {/* Top Step Number & Line */}
               <div className="flex items-center gap-4">
-                <span className="font-serif font-bold text-4xl sm:text-5xl text-efi-gold/50 group-hover:text-efi-gold transition-colors">
+                <span className="font-serif font-bold text-4xl sm:text-5xl text-efi-pine/50 group-hover:text-efi-pine transition-colors">
                   {step.number}
                 </span>
                 {idx < steps.length - 1 && (
-                  <div className="hidden md:block flex-1 h-[1px] bg-white/10 group-hover:bg-efi-gold/30 transition-colors"></div>
+                  <div className="hidden md:block flex-1 h-[1px] bg-white/10 group-hover:bg-efi-pine/30 transition-colors"></div>
                 )}
               </div>
 

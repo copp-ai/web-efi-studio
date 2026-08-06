@@ -37,13 +37,13 @@ export default function Testimonials() {
   return (
     <section id="testimonios" className="py-28 bg-efi-dark relative border-t border-white/5 overflow-hidden">
       {/* Background Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-gold-glow pointer-events-none opacity-15 blur-3xl"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-pine-glow pointer-events-none opacity-15 blur-3xl"></div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="max-w-2xl mx-auto text-center mb-20">
-          <span className="text-xs font-semibold uppercase tracking-widest text-efi-gold block mb-3">
+          <span className="text-xs font-semibold uppercase tracking-widest text-efi-pine block mb-3">
             Prueba Social Real
           </span>
           <h2 className="text-3xl sm:text-5xl font-serif font-bold text-efi-sand mb-4">
@@ -62,14 +62,14 @@ export default function Testimonials() {
                 "{item.quote}"
               </blockquote>
               
-              <div className="flex items-center gap-3 pt-4 border-t border-efi-gold/30">
-                <span className="w-8 h-[1px] bg-efi-gold/50"></span>
+              <div className="flex items-center gap-3 pt-4 border-t border-white/10">
+                <span className="w-8 h-[1px] bg-efi-pine/50"></span>
                 <div>
-                  <h4 className="text-lg font-serif font-bold text-efi-gold">
+                  <h4 className="text-lg font-serif font-bold text-efi-sand">
                     {item.name}
                   </h4>
                   <p className="text-xs text-efi-muted uppercase font-semibold tracking-wider">
-                    {item.role} · <span className="text-efi-sand font-normal">{item.highlight}</span>
+                    {item.role} · <span className="text-efi-pine font-normal">{item.highlight}</span>
                   </p>
                 </div>
               </div>
@@ -79,7 +79,7 @@ export default function Testimonials() {
 
         {/* 2. Secondary Streamlined Stories - Unboxed Editorial List with Vertical Separators */}
         <div className="pt-12 border-t border-white/10">
-          <span className="text-xs font-semibold uppercase tracking-widest text-efi-gold block mb-10 text-center lg:text-left">
+          <span className="text-xs font-semibold uppercase tracking-widest text-efi-muted block mb-10 text-center lg:text-left">
             Más experiencias de clientes eFI
           </span>
 
@@ -98,7 +98,7 @@ export default function Testimonials() {
                   <span className="text-xs font-serif font-semibold text-efi-sand block">
                     {item.name}
                   </span>
-                  <span className="text-[11px] text-efi-gold uppercase font-medium tracking-wider">
+                  <span className="text-[11px] text-efi-subtle uppercase font-medium tracking-wider">
                     {item.role}
                   </span>
                 </div>
