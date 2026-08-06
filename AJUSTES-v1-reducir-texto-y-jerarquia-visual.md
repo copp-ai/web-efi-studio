@@ -64,9 +64,9 @@ Reservarlo para donde realmente representa algo "de producto" (el portal). En la
 
 ### 6. Botón flotante de WhatsApp
 
-Agregar un botón flotante de WhatsApp (fijo en la esquina inferior derecha, visible en todo momento durante el scroll, ícono estándar de WhatsApp) que abra un chat directo con el número real de Valeria: **+595 991 480 481** → `https://wa.me/595991480481`.
+Agregar un botón flotante de WhatsApp (fijo en la esquina inferior derecha, visible en todo momento durante el scroll, ícono estándar de WhatsApp) que abra un chat directo con el número de negocio de eFI: **+595 971 791 069** → `https://wa.me/595971791069`.
 
-**Ojo con esto — corregir de paso:** todos los links de WhatsApp que ya existen en el sitio (`Hero.jsx`, `ServicesCatalog.jsx`, `FooterCTA.jsx`) usan un número placeholder falso (`595981000000`), no el número real de Valeria. Aprovechar este ajuste para reemplazarlo por `595991480481` en todos los CTAs existentes, no solo en el botón flotante nuevo.
+**Corrección (06/08):** el número +595 991 480 481 es el teléfono PERSONAL de Valeria, no el de eFI — no usarlo en ningún CTA del sitio. El número correcto de negocio es **+595 971 791 069**, ya corregido en todos los componentes (`Hero.jsx`, `Navbar.jsx`, `ServicesCatalog.jsx`, `FooterCTA.jsx`, `FloatingWhatsApp.jsx`, `SelfDiagnostic.jsx`).
 
 ---
 

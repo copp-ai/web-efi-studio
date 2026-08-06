@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowRight, Clock, Shield, MessageCircle } from 'lucide-react';
 
 export default function FooterCTA() {
-  const whatsappUrl = "https://wa.me/595991480481?text=Hola%20Valeria,%20quisiera%20agendar%20mi%20eFI%20Clarity%20Session";
+  const whatsappUrl = "https://wa.me/595971791069?text=Hola%20Valeria,%20quisiera%20agendar%20mi%20eFI%20Clarity%20Session";
 
   return (
     <footer className="relative bg-efi-dark border-t border-white/10 pt-20 pb-12 overflow-hidden">

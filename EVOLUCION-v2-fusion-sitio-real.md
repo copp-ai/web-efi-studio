@@ -61,7 +61,7 @@ El sitio real manda a `/agendar/[programa]` — probablemente un calendario/chec
 - Family Care → `"Hola Valeria, quisiera empezar eFI Family Care"`
 - Wealth Flow → `"Hola Valeria, quisiera consultar disponibilidad para eFI Wealth Flow"`
 
-Todos a `https://wa.me/595991480481` con el texto correspondiente — mismo número real ya usado en el botón flotante.
+Todos a `https://wa.me/595971791069` con el texto correspondiente — número de negocio de eFI, no el personal de Valeria (corregido 06/08 en todos los componentes existentes también).
 
 ---
 
@@ -118,6 +118,21 @@ Feedback real de Copp: el gráfico de barras actual dentro de `PortalMockup.jsx`
 - Sin líneas de grid de fondo, sin ejes con números "tipo spreadsheet" — los datos se leen por forma y color, no por escala precisa (esto es un mockup de venta, no un dashboard analítico real).
 - Mantener la paleta ya definida en la sección 4bis (base neutra + dorado como acento) — el gráfico es el lugar donde más justificado está usar el dorado con fuerza, junto con el glassmorphism que ya tiene el portal.
 - Sigue siendo el único gráfico "real" de todo el sitio — todo lo demás (tabla de precios, comparativa) usa formato de texto/tabla simple, no chart.
+
+---
+
+## 4quater. Rediseño de la sección de Testimonios (se ve "hecho con IA")
+
+Feedback real de Copp: la sección de testimonios se ve genérica/sintética — cards muy grandes, todas idénticas, no transmite que son personas reales.
+
+**Por qué pasa esto (diagnóstico, no solo síntoma):** cards de igual tamaño + mismo ícono de avatar circular con iniciales + misma fila de 5 estrellas repetida en cada una es exactamente el patrón "UI kit genérico" que más rápido lee como hecho por IA — es la *Law of Similarity* de Yablonski funcionando en tu contra: el cerebro agrupa las 5 tarjetas como una sola unidad repetitiva en vez de leer cada una como una voz humana distinta. Además viola el *Von Restorff Effect* — nada se distingue, nada se recuerda. Y en términos de Capote: estos testimonios tienen carga emocional real ("amo mis sesiones, me gustan más que mi terapia" — eso es una frase humana genuina), y encerrarla en una caja idéntica a las demás la aplana en vez de dejarla respirar.
+
+**Instrucción para Antigravity:**
+- Sacar el grid de cards idénticas. Reemplazar por una jerarquía real: 1-2 testimonios destacados en formato de cita editorial grande (tipografía serif grande, sin caja, como se hizo con la cita de Valeria en `Authority.jsx`), y el resto en un formato más liviano y compacto (lista con separadores simples, o un carrusel horizontal de tarjetas más chicas) — no todos al mismo nivel visual.
+- Sacar la fila de 5 estrellas repetida idéntica en cada card si no es data real y verificable — es lo que más grita "template". Si se mantiene, variar tratamiento o quitarla del todo y dejar que el texto hable solo.
+- Sacar (o rediseñar) el ícono de avatar circular con iniciales repetido en las 5 — es otro elemento "UI kit" que se ve igual en cualquier landing genérica. Priorizar el nombre real en texto (María Fe Figueredo, Fabiola Bogado ya son nombres reales — dejarlos protagonistas) antes que un avatar decorativo.
+- Achicar el tamaño general de las cards que se mantengan — el testimonio anónimo ("Cliente eFI, Programa Individual") no necesita el mismo peso visual que uno con nombre real; usar tamaños distintos ayuda a que se sienta curado a mano, no generado en lote.
+- Mantener el texto de las citas tal cual — son reales, no reescribir.
 
 ---
 

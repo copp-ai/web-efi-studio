@@ -18,7 +18,7 @@ export default function ServicesCatalog() {
         "Hoja de ruta con decisiones accionables"
       ],
       ctaText: "Reservar Clarity Session",
-      whatsappUrl: "https://wa.me/595991480481?text=Hola%20Valeria,%20quisiera%20reservar%20mi%20eFI%20Clarity%20Session"
+      whatsappUrl: "https://wa.me/595971791069?text=Hola%20Valeria,%20quisiera%20reservar%20mi%20eFI%20Clarity%20Session"
     },
     {
       id: "personal",
@@ -35,7 +35,7 @@ export default function ServicesCatalog() {
         "Soporte directo vía WhatsApp durante el mes"
       ],
       ctaText: "Empezar Personal Finance",
-      whatsappUrl: "https://wa.me/595991480481?text=Hola%20Valeria,%20quisiera%20empezar%20eFI%20Personal%20Finance"
+      whatsappUrl: "https://wa.me/595971791069?text=Hola%20Valeria,%20quisiera%20empezar%20eFI%20Personal%20Finance"
     },
     {
       id: "family",
@@ -52,7 +52,7 @@ export default function ServicesCatalog() {
         "Estrategia de tranquilidad para el grupo familiar"
       ],
       ctaText: "Empezar Family Care",
-      whatsappUrl: "https://wa.me/595991480481?text=Hola%20Valeria,%20quisiera%20empezar%20eFI%20Family%20Care"
+      whatsappUrl: "https://wa.me/595971791069?text=Hola%20Valeria,%20quisiera%20empezar%20eFI%20Family%20Care"
     },
     {
       id: "wealth",
@@ -69,7 +69,7 @@ export default function ServicesCatalog() {
         "Acceso completo a tu Portal eFI Interactivo"
       ],
       ctaText: "Consultar Wealth Flow",
-      whatsappUrl: "https://wa.me/595991480481?text=Hola%20Valeria,%20quisiera%20consultar%20disponibilidad%20para%20eFI%20Wealth%20Flow"
+      whatsappUrl: "https://wa.me/595971791069?text=Hola%20Valeria,%20quisiera%20consultar%20disponibilidad%20para%20eFI%20Wealth%20Flow"
     }
   ];
 

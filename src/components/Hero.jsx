@@ -2,7 +2,7 @@ import React from 'react';
 import { ShieldCheck, ArrowRight, Sparkles, Clock } from 'lucide-react';
 
 export default function Hero() {
-  const whatsappUrl = "https://wa.me/595991480481?text=Hola%20Valeria,%20quisiera%20agendar%20mi%20eFI%20Clarity%20Session";
+  const whatsappUrl = "https://wa.me/595971791069?text=Hola%20Valeria,%20quisiera%20agendar%20mi%20eFI%20Clarity%20Session";
 
   return (
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">

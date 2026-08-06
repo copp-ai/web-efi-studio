@@ -13,7 +13,7 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const whatsappUrl = "https://wa.me/595991480481?text=Hola%20Valeria,%20quisiera%20agendar%20mi%20eFI%20Clarity%20Session";
+  const whatsappUrl = "https://wa.me/595971791069?text=Hola%20Valeria,%20quisiera%20agendar%20mi%20eFI%20Clarity%20Session";
 
   const navLinks = [
     { name: "Filosofía", href: "#filosofia" },
