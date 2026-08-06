@@ -4,28 +4,28 @@ export default function HowItWorks() {
   const steps = [
     {
       number: "01",
-      title: "Compartís tus números sin fricción",
-      description: "Nos enviás tus extractos o archivos en el formato más cómodo. Sin dar claves bancarias."
+      title: "Diagnóstico",
+      description: "Mapeamos tu situación financiera actual en detalle y sin prejuicios para entender de dónde partimos."
     },
     {
       number: "02",
-      title: "Procesamos con tecnología + mirada boutique",
-      description: "Combinamos inteligencia de datos con la revisión profesional de nuestro equipo."
+      title: "Visibilizamos",
+      description: "Traducimos números complejos a un tablero ejecutivo visual e intuitivo en Guaraníes."
     },
     {
       number: "03",
-      title: "Recibís tu Panel e Informe en Guaraníes",
-      description: "Visualizás tus números ordenados con los indicadores ejecutivos clave de tu salud financiera."
+      title: "Ordenamos",
+      description: "Estructuramos tu presupuesto personal o familiar, fondo de tranquilidad y reglas claras de flujo."
     },
     {
       number: "04",
-      title: "Decisiones con tranquilidad mensual",
-      description: "Alineamos objetivos, optimizamos liquidez y proyectamos tu patrimonio sin estrés."
+      title: "Decidís",
+      description: "Tomas decisiones estratégicas respaldadas en datos reales con total previsibilidad y paz mental."
     }
   ];
 
   return (
-    <section id="como-funciona" className="py-24 relative overflow-hidden bg-efi-dark">
+    <section id="como-funciona" className="py-24 relative overflow-hidden bg-efi-dark border-t border-white/5">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -34,19 +34,19 @@ export default function HowItWorks() {
             Metodología eFI
           </span>
           <h2 className="text-3xl sm:text-5xl font-serif font-bold text-efi-sand mb-4">
-            Un proceso simple en 4 pasos
+            Un método probado en 4 pasos
           </h2>
           <p className="text-base text-efi-muted">
-            Diseñado para devolverte claridad liberándote de la carga operativa.
+            Diseñado para devolverte el control estratégico de tus números sin burocracia ni estrés.
           </p>
         </div>
 
-        {/* Timeline Flow (Horizontal / Vertical) */}
+        {/* Timeline Flow */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
           {steps.map((step, idx) => (
-            <div key={idx} className="relative space-y-3 group">
+            <div key={idx} className="relative space-y-3 group p-4 rounded-2xl hover:bg-white/[0.02] transition-colors">
               
-              {/* Top Step Number & Connecting Line */}
+              {/* Top Step Number & Line */}
               <div className="flex items-center gap-4">
                 <span className="font-serif font-bold text-4xl sm:text-5xl text-efi-gold/50 group-hover:text-efi-gold transition-colors">
                   {step.number}
@@ -56,8 +56,8 @@ export default function HowItWorks() {
                 )}
               </div>
 
-              {/* Title & Short Description */}
-              <h3 className="text-lg font-serif font-semibold text-efi-sand leading-snug">
+              {/* Step Name & Description */}
+              <h3 className="text-xl font-serif font-bold text-efi-sand leading-snug">
                 {step.title}
               </h3>
               <p className="text-sm text-efi-muted leading-relaxed">

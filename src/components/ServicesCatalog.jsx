@@ -1,147 +1,171 @@
 import React from 'react';
-import { Sparkles, ArrowRight, Clock, Check } from 'lucide-react';
+import { Sparkles, ArrowRight, Check, ShieldCheck, Clock, Users, BarChart3 } from 'lucide-react';
 
 export default function ServicesCatalog() {
-  const whatsappClarityUrl = "https://wa.me/595991480481?text=Hola%20Valeria,%20me%20interesa%20la%20eFI%20Clarity%20Session";
-  const whatsappGeneralUrl = "https://wa.me/595991480481?text=Hola%20Valeria,%20quisiera%20consultar%20sobre%20los%20servicios%20mensuales%20de%20eFI%20Studio";
+  const programs = [
+    {
+      id: "clarity",
+      title: "eFI Clarity Session",
+      badge: "Puerta de Entrada",
+      price: "Gs. 450.000",
+      period: "Sesión única de 90 min",
+      highlight: true,
+      desc: "Sesión intensiva para mapear tus números actuales, solucionar dudas urgentes y salir con tu planilla anual personalizada ese mismo día.",
+      features: [
+        "Diagnóstico completo de liquidez e ingresos",
+        "Planilla anual ejecutiva personalizada",
+        "Estructuración de fondo de tranquilidad",
+        "Hoja de ruta con decisiones accionables"
+      ],
+      ctaText: "Reservar Clarity Session",
+      whatsappUrl: "https://wa.me/595991480481?text=Hola%20Valeria,%20quisiera%20reservar%20mi%20eFI%20Clarity%20Session"
+    },
+    {
+      id: "personal",
+      title: "eFI Personal Finance",
+      badge: "Programa Individual",
+      price: "Gs. 2.900.000",
+      period: "4 sesiones · 1 mes",
+      highlight: false,
+      desc: "Acompañamiento personalizado para ejecutivos y profesionales que buscan estructurar su presupuesto y consolidar el hábito de ahorro.",
+      features: [
+        "4 sesiones individuales de seguimiento",
+        "Diseño de sistema presupuestario a medida",
+        "Tablero de control de hábitos de consumo",
+        "Soporte directo vía WhatsApp durante el mes"
+      ],
+      ctaText: "Empezar Personal Finance",
+      whatsappUrl: "https://wa.me/595991480481?text=Hola%20Valeria,%20quisiera%20empezar%20eFI%20Personal%20Finance"
+    },
+    {
+      id: "family",
+      title: "eFI Family Care",
+      badge: "Finanzas en Pareja / Familia",
+      price: "Gs. 4.900.000",
+      period: "4 sesiones · Cobertura Familiar",
+      highlight: false,
+      desc: "Facilitación neutral para alinear prioridades del hogar, acordar presupuestos comunes y planificar proyectos de vida juntos sin fricciones.",
+      features: [
+        "4 sesiones conjuntas de facilitación",
+        "Presupuesto familiar y distribución de gastos",
+        "Planificación de metas (hogar, viajes, educación)",
+        "Estrategia de tranquilidad para el grupo familiar"
+      ],
+      ctaText: "Empezar Family Care",
+      whatsappUrl: "https://wa.me/595991480481?text=Hola%20Valeria,%20quisiera%20empezar%20eFI%20Family%20Care"
+    },
+    {
+      id: "wealth",
+      title: "eFI Wealth Flow",
+      badge: "Retainer Mensual Continuo",
+      price: "Gs. 1.200.000",
+      period: "por mes (suscripción)",
+      highlight: false,
+      desc: "Servicio continuo para quienes delegan por completo el procesamiento operativo de sus números con acceso exclusivo al portal eFI.",
+      features: [
+        "Procesamiento operativo mensual de datos",
+        "Reportes ejecutivos periódicos de rendimiento",
+        "Análisis de desvíos y ajustes en tiempo real",
+        "Acceso completo a tu Portal eFI Interactivo"
+      ],
+      ctaText: "Consultar Wealth Flow",
+      whatsappUrl: "https://wa.me/595991480481?text=Hola%20Valeria,%20quisiera%20consultar%20disponibilidad%20para%20eFI%20Wealth%20Flow"
+    }
+  ];
 
   return (
     <section id="servicios" className="py-24 bg-efi-surface/30 relative border-t border-white/5">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div className="max-w-2xl mx-auto text-center mb-16">
+        <div className="max-w-3xl mx-auto text-center mb-16">
           <span className="text-xs font-semibold uppercase tracking-widest text-efi-gold block mb-3">
-            Catálogo Boutique
+            Programas & Tabla Comparativa
           </span>
           <h2 className="text-3xl sm:text-5xl font-serif font-bold text-efi-sand mb-4">
-            Servicios diseñados para tu tranquilidad
+            Planes diseñados para cada etapa de tu vida
           </h2>
           <p className="text-base text-efi-muted">
-            Desde una sesión intensiva de ordenamiento hasta el acompañamiento mensual continuo.
+            Transparencia total en precios en Guaraníes y alcance claro de cada servicio. Sin sorpresas ni costos ocultos.
           </p>
         </div>
 
-        {/* Featured Service: eFI Clarity Session (Hábito de entrada) */}
-        <div className="mb-16 p-8 sm:p-10 rounded-3xl glass-panel-gold relative overflow-hidden shadow-2xl border-efi-gold/40">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
-            <div className="lg:col-span-7 space-y-4">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-efi-gold/20 border border-efi-gold/40 text-efi-gold text-xs font-semibold uppercase tracking-wider">
-                <Sparkles className="w-3.5 h-3.5" />
-                Puerta de Entrada Recomendada
+        {/* Pricing Cards Grid (4 Programs) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+          {programs.map((prog) => (
+            <div
+              key={prog.id}
+              className={`flex flex-col justify-between p-7 rounded-3xl transition-all duration-300 relative ${
+                prog.highlight
+                  ? 'bg-efi-card border-2 border-efi-gold shadow-glow-gold scale-[1.02]'
+                  : 'bg-efi-surface/70 border border-white/10 hover:border-efi-gold/40'
+              }`}
+            >
+              {prog.highlight && (
+                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-efi-gold text-efi-dark font-bold text-[10px] uppercase tracking-wider flex items-center gap-1 shadow-lg">
+                  <Sparkles className="w-3 h-3" />
+                  Más Elegido
+                </div>
+              )}
+
+              <div>
+                <span className="text-[11px] font-semibold text-efi-gold uppercase tracking-wider block mb-2">
+                  {prog.badge}
+                </span>
+
+                <h3 className="text-2xl font-serif font-bold text-efi-sand mb-3">
+                  {prog.title}
+                </h3>
+
+                <div className="mb-4">
+                  <span className="block font-serif text-3xl font-bold text-efi-gold">
+                    {prog.price}
+                  </span>
+                  <span className="text-xs text-efi-muted uppercase font-semibold">
+                    {prog.period}
+                  </span>
+                </div>
+
+                <p className="text-sm text-efi-muted leading-relaxed mb-6 border-b border-white/10 pb-6">
+                  {prog.desc}
+                </p>
+
+                {/* Bullets List */}
+                <ul className="space-y-3 mb-8">
+                  {prog.features.map((feat, idx) => (
+                    <li key={idx} className="flex items-start gap-2.5 text-xs text-efi-sand leading-tight">
+                      <Check className="w-4 h-4 text-efi-gold shrink-0 mt-0.5" />
+                      <span>{feat}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
 
-              <h3 className="text-3xl sm:text-4xl font-serif font-bold text-efi-sand">
-                eFI Clarity Session
-              </h3>
-
-              <p className="text-base text-efi-muted leading-relaxed">
-                Sesión intensiva de 90 minutos para ordenar tus números actuales, resolver tus dudas urgentes y salir con tu hoja de ruta anual armada ese mismo día.
-              </p>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-                <div className="flex items-center gap-2 text-sm text-efi-sand">
-                  <Check className="w-4 h-4 text-efi-gold shrink-0" />
-                  Diagnóstico completo de liquidez
-                </div>
-                <div className="flex items-center gap-2 text-sm text-efi-sand">
-                  <Check className="w-4 h-4 text-efi-gold shrink-0" />
-                  Planilla anual personalizada
-                </div>
-                <div className="flex items-center gap-2 text-sm text-efi-sand">
-                  <Check className="w-4 h-4 text-efi-gold shrink-0" />
-                  Definición de fondo de tranquilidad
-                </div>
-                <div className="flex items-center gap-2 text-sm text-efi-sand">
-                  <Check className="w-4 h-4 text-efi-gold shrink-0" />
-                  Recomendaciones accionables
-                </div>
+              {/* Action Button */}
+              <div>
+                <a
+                  href={prog.whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all ${
+                    prog.highlight
+                      ? 'text-efi-dark bg-gradient-to-r from-efi-gold-light via-efi-gold to-efi-gold-hover hover:shadow-glow-gold'
+                      : 'text-efi-sand bg-efi-card hover:bg-efi-gold/20 hover:text-efi-gold border border-white/10'
+                  }`}
+                >
+                  {prog.ctaText}
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </a>
               </div>
+
             </div>
-
-            <div className="lg:col-span-5 flex flex-col items-center lg:items-end justify-center bg-efi-card/90 p-6 rounded-2xl border border-efi-gold/20 text-center lg:text-right">
-              <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-efi-gold mb-2">
-                <Clock className="w-4 h-4" />
-                Duración: 90 minutos
-              </div>
-              <p className="text-sm text-efi-muted mb-6">
-                Resultados inmediatos y una radiografía clara sin compromisos de largo plazo.
-              </p>
-              <a
-                href={whatsappClarityUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-xs font-semibold uppercase tracking-wider text-efi-dark bg-gradient-to-r from-efi-gold-light via-efi-gold to-efi-gold-hover hover:shadow-glow-gold transition-all"
-              >
-                Agendar eFI Clarity Session
-                <ArrowRight className="w-4 h-4" />
-              </a>
-            </div>
-
-          </div>
+          ))}
         </div>
 
-        {/* Secondary Services: Clean Streamlined List (No repetitive boxed cards) */}
-        <div className="space-y-8 pt-6 border-t border-white/10">
-          <h3 className="text-xl font-serif font-bold text-efi-sand text-center lg:text-left">
-            Programas de Acompañamiento Continuo
-          </h3>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-            {/* Service 1 */}
-            <div className="space-y-3 p-4 rounded-2xl hover:bg-white/[0.02] transition-colors">
-              <span className="text-xs font-semibold text-efi-gold uppercase tracking-wider block">
-                Asesoría de 1 mes
-              </span>
-              <h4 className="text-xl font-serif font-semibold text-efi-sand">
-                eFI Personal Finance
-              </h4>
-              <p className="text-sm text-efi-muted leading-relaxed">
-                Acompañamiento personalizado para profesionales independientes y ejecutivos que buscan estructurar su presupuesto y optimizar su capacidad de ahorro.
-              </p>
-            </div>
-
-            {/* Service 2 */}
-            <div className="space-y-3 p-4 rounded-2xl hover:bg-white/[0.02] transition-colors border-y md:border-y-0 md:border-x border-white/10 md:px-6">
-              <span className="text-xs font-semibold text-efi-gold uppercase tracking-wider block">
-                Finanzas en Pareja / Familia
-              </span>
-              <h4 className="text-xl font-serif font-semibold text-efi-sand">
-                eFI Family Care
-              </h4>
-              <p className="text-sm text-efi-muted leading-relaxed">
-                Facilitación neutral para alinear metas familiares, presupuesto del hogar, fondos educativos y proyectos de vida en común.
-              </p>
-            </div>
-
-            {/* Service 3 */}
-            <div className="space-y-3 p-4 rounded-2xl hover:bg-white/[0.02] transition-colors">
-              <span className="text-xs font-semibold text-efi-gold uppercase tracking-wider block">
-                Gestión Financiera Mensual
-              </span>
-              <h4 className="text-xl font-serif font-semibold text-efi-sand">
-                eFI Wealth Flow
-              </h4>
-              <p className="text-sm text-efi-muted leading-relaxed">
-                Servicio continuo mensual para quienes delegan por completo el procesamiento operativo de sus números con acceso a su portal ejecutivo.
-              </p>
-            </div>
-
-          </div>
-
-          <div className="text-center pt-4">
-            <a
-              href={whatsappGeneralUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-efi-gold hover:text-efi-gold-light transition-colors"
-            >
-              Consultar sobre programas mensuales por WhatsApp →
-            </a>
-          </div>
-
+        {/* Subtitle Guarantee Note */}
+        <div className="mt-12 text-center text-xs text-efi-muted flex items-center justify-center gap-2">
+          <ShieldCheck className="w-4 h-4 text-efi-gold" />
+          <span>Todos los programas incluyen 100% de confidencialidad y garantía de satisfacción eFI.</span>
         </div>
 
       </div>

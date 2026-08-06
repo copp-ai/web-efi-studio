@@ -1,4 +1,5 @@
 import React from 'react';
+import { Quote } from 'lucide-react';
 
 export default function Authority() {
   return (
@@ -7,10 +8,20 @@ export default function Authority() {
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
-          {/* Left Column: Clean Editorial Profile */}
+          {/* Left Column: Editorial Photo of Founder */}
           <div className="lg:col-span-5 flex flex-col items-center lg:items-start text-center lg:text-left">
-            <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-efi-card to-efi-surface border-2 border-efi-gold/40 flex items-center justify-center mb-6 shadow-2xl">
-              <span className="font-serif font-bold text-4xl text-efi-gold">VC</span>
+            <div className="relative mb-6 group">
+              <div className="w-48 h-64 sm:w-56 sm:h-72 rounded-3xl overflow-hidden border-2 border-efi-gold/40 shadow-2xl relative">
+                <img 
+                  src="/assets/about-valeria.jpg" 
+                  alt="Valeria Cuenca - Fundadora de eFI Studio" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-efi-dark/80 via-transparent to-transparent"></div>
+              </div>
+              <div className="absolute -bottom-3 -right-3 bg-efi-gold text-efi-dark p-2.5 rounded-xl shadow-xl">
+                <Quote className="w-5 h-5" />
+              </div>
             </div>
 
             <h3 className="text-3xl font-serif font-bold text-efi-sand mb-1">
@@ -19,27 +30,37 @@ export default function Authority() {
             <p className="text-xs text-efi-gold font-semibold uppercase tracking-widest mb-4">
               Fundadora & Directora de eFI Studio
             </p>
-            <p className="text-base text-efi-muted leading-relaxed">
-              14+ años liderando estrategia de marca y presupuestos ejecutivos en empresas multinacionales como Nestlé, Samsung Electronics y NIVEA.
+            <p className="text-sm text-efi-muted leading-relaxed">
+              +14 años liderando estrategia de marca y presupuestos ejecutivos en empresas multinacionales como Nestlé, Samsung Electronics y NIVEA.
             </p>
           </div>
 
-          {/* Right Column: Editorial Narrative & Stats */}
+          {/* Right Column: Narrative, Buffett Quote & Stats */}
           <div className="lg:col-span-7 space-y-8 pl-0 lg:pl-8 border-l-0 lg:border-l border-white/10">
             
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-efi-sand leading-snug">
-              "El mismo rigor analítico de las multinacionales, llevado a tus finanzas personales."
+              "Fundé eFI Studio para llevar más de una década de análisis de datos corporativos a la vida financiera de las personas."
             </h2>
 
+            {/* Warren Buffett Quote Box */}
+            <div className="p-6 rounded-2xl bg-efi-surface/80 border border-efi-gold/30 relative">
+              <p className="font-serif italic text-lg text-efi-sand leading-relaxed">
+                "El riesgo viene de no saber lo que estás haciendo."
+              </p>
+              <span className="block text-xs font-semibold uppercase tracking-wider text-efi-gold mt-2">
+                — Warren Buffett
+              </span>
+            </div>
+
             <p className="text-base text-efi-muted leading-relaxed">
-              Tras más de una década gestionando los números de marcas líderes de consumo masivo, entendí que los ejecutivos y profesionales necesitan el mismo nivel de claridad estratégica en su vida personal que el que exige el directorio de una multinacional.
+              Tras más de una década gestionando los números de marcas líderes, entendí que los profesionales y familias necesitan el mismo nivel de claridad estratégica en su vida personal que el que exige el directorio de una multinacional.
             </p>
 
             {/* 4 Clean Stats */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-6 border-t border-white/10">
               <div>
                 <span className="block font-serif text-3xl font-bold text-efi-sand">14+</span>
-                <span className="text-xs text-efi-muted uppercase font-medium">Años en Multinacionales</span>
+                <span className="text-xs text-efi-muted uppercase font-medium">Años Corporativos</span>
               </div>
               <div>
                 <span className="block font-serif text-3xl font-bold text-efi-gold">+100</span>
