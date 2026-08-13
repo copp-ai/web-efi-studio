@@ -25,12 +25,12 @@ export default function PhilosophyStrip() {
         src="/assets/philosophy-band.jpg"
         alt=""
         aria-hidden="true"
-        className="absolute inset-0 w-full h-full object-cover object-center grayscale"
+        className="absolute inset-0 w-full h-full object-cover object-center grayscale brightness-75 contrast-90"
         loading="lazy"
       />
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-efi-dark/82" />
+      <div className="absolute inset-0 bg-efi-dark/90" />
 
       {/* Left vertical accent line */}
       <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-efi-gold opacity-70" />
@@ -38,7 +38,10 @@ export default function PhilosophyStrip() {
       <div className="relative z-10 max-w-6xl mx-auto px-8 sm:px-12 lg:px-16 py-20 w-full">
 
         {/* Eyebrow */}
-        <span className="text-[11px] font-semibold uppercase tracking-[0.25em] text-efi-gold block mb-10">
+        <span 
+          className="text-[11px] font-semibold uppercase tracking-[0.25em] text-efi-gold block mb-10"
+          style={{ textShadow: '0 2px 12px rgba(0,0,0,0.8)' }}
+        >
           Filosofía de Trabajo · eFI Studio
         </span>
 
@@ -46,10 +49,16 @@ export default function PhilosophyStrip() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-0 lg:divide-x lg:divide-white/10">
           {PILLARS.map((p, i) => (
             <div key={i} className="lg:px-8 first:lg:pl-0 last:lg:pr-0 space-y-2">
-              <h3 className="font-serif font-bold text-3xl sm:text-4xl text-efi-sand leading-none tracking-tight">
+              <h3 
+                className="font-serif font-bold text-3xl sm:text-4xl text-efi-sand leading-none tracking-tight"
+                style={{ textShadow: '0 2px 16px rgba(0,0,0,0.85)' }}
+              >
                 {p.word}
               </h3>
-              <p className="text-sm text-efi-muted leading-relaxed">
+              <p 
+                className="text-sm text-efi-muted leading-relaxed"
+                style={{ textShadow: '0 2px 12px rgba(0,0,0,0.85)' }}
+              >
                 {p.body}
               </p>
             </div>

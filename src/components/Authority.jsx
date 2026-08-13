@@ -56,8 +56,8 @@ export default function Authority() {
               Tras más de una década gestionando los números de marcas líderes, entendí que los profesionales y familias necesitan el mismo nivel de claridad estratégica en su vida personal que el que exige el directorio de una multinacional.
             </p>
 
-            {/* 4 Clean Stats */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-6 border-t border-white/10">
+            {/* 3 Clean Stats */}
+            <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-6 border-t border-white/10">
               <div>
                 <span className="block font-serif text-3xl font-bold text-efi-sand">14+</span>
                 <span className="text-xs text-efi-muted uppercase font-medium">Años Corporativos</span>
@@ -69,10 +69,6 @@ export default function Authority() {
               <div>
                 <span className="block font-serif text-3xl font-bold text-efi-sand">100%</span>
                 <span className="text-xs text-efi-muted uppercase font-medium">Confidencialidad</span>
-              </div>
-              <div>
-                <span className="block font-serif text-3xl font-bold text-efi-sand">Gs.</span>
-                <span className="text-xs text-efi-muted uppercase font-medium">Moneda Local</span>
               </div>
             </div>
 

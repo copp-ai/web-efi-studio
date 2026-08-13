@@ -1,11 +1,11 @@
 ---
-status: auditoría completa — pendiente de convertir en brief para Antigravity
-fecha_actualizacion: 2026-08-06
-tags: [valeria-cuenca, efi-studio, prototipo-web, auditoria, kahneman, helio-vera, james-clear, bj-fogg, john-doerr, ben-lamorte, dan-koe, mik-kersten, cialdini]
-summary: Auditoría del sitio web-efi-studio (después de la fusión v2 y los ajustes de paleta/testimonios/navbar/footer/hero) pasada por 9 lentes teóricos a pedido de Copp — Kahneman, Helio Vera, James Clear, BJ Fogg, John Doerr, Ben Lamorte, Dan Koe, Mik Kersten, Cialdini. Enfoque en copy, estructura de conversión y posicionamiento, no en estética visual (eso ya se cubrió en los ajustes anteriores).
+status: auditoría completa — 10 lentes, parcialmente convertida en AJUSTES (v3, v7)
+fecha_actualizacion: 2026-08-13
+tags: [valeria-cuenca, efi-studio, prototipo-web, auditoria, kahneman, helio-vera, james-clear, bj-fogg, john-doerr, ben-lamorte, dan-koe, mik-kersten, cialdini, nir-eyal, hooked]
+summary: Auditoría del sitio web-efi-studio pasada por 10 lentes teóricos a pedido de Copp — Kahneman, Helio Vera, James Clear, BJ Fogg, John Doerr, Ben Lamorte, Dan Koe, Mik Kersten, Cialdini (ronda original, 06/08) + Nir Eyal/Hooked (agregado 13/08, para volver a poner a prueba el "Comité Remoto" que Antigravity generó solo al leer este archivo — ver plantilla-comite-de-lentes-multiagente.md). Enfoque en copy, estructura de conversión y posicionamiento, no en estética visual (eso ya se cubrió en los ajustes de paleta/fotos).
 ---
 
-# Auditoría del sitio eFI — 9 lentes teóricos
+# Auditoría del sitio eFI — 10 lentes teóricos
 
 > Esta auditoría mira lo que las rondas anteriores de ajuste no cubrieron: no es sobre cómo se ve el sitio, es sobre si la estructura, el copy y el embudo realmente hacen lo que cada marco predice que funciona en un ser humano real tomando la decisión de contratar o no.
 
@@ -83,19 +83,41 @@ summary: Auditoría del sitio web-efi-studio (después de la fusión v2 y los aj
 
 ---
 
+## 10. Nir Eyal — Hooked (Gatillo → Acción → Recompensa Variable → Inversión)
+
+*Agregado 13/08/2026, a pedido de Copp — el mismo lente que ya usás internamente en ITAE para diseñar la adopción de tus propios Sistemas de Co-Inteligencia (ver `Nir Eyal - Hooked.md`), aplicado acá al embudo de eFI. Es el único de los 10 lentes que mira específicamente si el sitio genera un circuito que trae al visitante de vuelta, no solo si convierte en la primera visita.*
+
+**Diagnóstico — recorriendo el Modelo Hook contra el sitio real:**
+
+- **Gatillo (Trigger):** el interno ya está bien identificado y nombrado, no es un hallazgo nuevo — la "vergüenza financiera" y la ansiedad de "no saber a dónde va la plata" son exactamente el tipo de gatillo interno (emoción negativa, incomodidad que exige alivio) que Eyal pide como motor real del hábito. `PainPoints.jsx` ya lo nombra en primera persona ("Sé que gano bien, pero no sé exactamente a dónde se va") y el cierre del Footer ("un mes más de decisiones tomadas a ciegas") funciona como gatillo externo que apunta directo a ese gatillo interno. Esto ya está resuelto — no requiere cambio.
+- **Acción (Action):** cubierto en profundidad por el lente de Fogg (arriba) — WhatsApp con mensaje prellenado y autodiagnóstico de 3 clics ya son la acción mínima posible. Eyal no agrega nada nuevo acá que Fogg no haya dicho ya.
+- **Recompensa Variable (Variable Reward) — esto sí es un ángulo nuevo, no cubierto por los otros 9 lentes:** el autodiagnóstico entrega una recompensa del tipo *Caza* (información: "¿qué programa es para mí?") con algo de *Yo* (autoconocimiento: "por fin entiendo mi situación") — estructuralmente bien diseñado, pero el sitio no lo nombra como tal, es una recompensa "silenciosa". Más importante: el reporte mensual de Wealth Flow tiene una ventaja que ningún producto artificial puede fabricar — es **genuinamente variable**, porque los patrones de gasto reales cambian mes a mes. Eyal advierte que una recompensa 100% predecible mata el interés rápido; acá el riesgo es el opuesto y no está explotado: el sitio vende Wealth Flow como continuidad operativa (ver Kersten, lente 8) pero no como "cada mes te sorprende con algo distinto de tus propios números" — se está dejando en la mesa un gancho psicológico real, no inventado.
+- **Inversión (Investment) — el eslabón más débil del embudo bajo este lente:** el autodiagnóstico termina en una recomendación + botón de WhatsApp + "Reiniciar test". No hay ninguna captura de dato (email, nombre) ni artefacto que el visitante se lleve — quien completa el test y no está listo para escribir por WhatsApp en ese momento, se va del sitio sin dejar rastro y sin ningún gatillo externo futuro (ni un mail de seguimiento, nada). Es el hueco clásico que describe Eyal: sin inversión, no hay vuelta al loop. Contraste: el proceso operativo real de eFI (el cliente manda sus propios extractos cada mes) sí es una inversión fuerte en el sentido de Eyal — el cliente pone su propio tiempo y datos, lo que debería aumentar su valoración del servicio (Efecto IKEA) — pero el sitio no lo enmarca así, lo presenta como un paso operativo neutro ("mandás tus extractos por WhatsApp"), no como "vos construís tu propio panel".
+- **Chequeo ético (Matriz de Manipulación de Eyal):** Facilitador vs. Peddler vs. Entretenedor vs. Dealer. eFI cae claramente en **Facilitador** — Valeria usa su propio rigor con clientes reales, hay testimonios verificables, y el servicio mejora materialmente la vida financiera del cliente. Vale la pena decirlo explícitamente: este lente no encuentra ningún riesgo de manipulación en el modelo de negocio, a diferencia de lo que sí podría pasar con un producto que fabrica urgencia artificial sin sustento real.
+
+**Recomendación:**
+
+1. Agregar una captura de contacto (mínimo email) al final del autodiagnóstico, antes o junto al botón de WhatsApp — algo como "Te mandamos tu resultado + una guía corta" — convierte una salida sin rastro en una Inversión real y le da a eFI un canal de gatillo externo (mail) para quien no está listo para escribir todavía. Es el cambio de mayor impacto de este lente, y hoy no existe.
+2. En el copy de Wealth Flow, nombrar explícitamente la variabilidad como valor, no solo la continuidad — algo en la línea de "cada mes tu reporte es distinto, porque tu vida también lo es" — refuerza el hallazgo de Kersten (lente 8) con el ángulo psicológico de por qué no se vuelve aburrido.
+3. Reencuadrar el paso de "mandás tus extractos por WhatsApp" (ya existe operativamente, no es un cambio de proceso, es un cambio de copy) como una inversión activa del cliente en su propio sistema — no un trámite que le pedís, sino algo que él construye.
+
+---
+
 ## Síntesis — qué queda accionable
 
-La mayoría de los hallazgos son de **copy y jerarquía de contenido**, no de diseño visual (eso ya se resolvió en las rondas anteriores). Los 4 más concretos y fáciles de instruir a Antigravity:
+La mayoría de los hallazgos son de **copy y jerarquía de contenido**, no de diseño visual (eso ya se resolvió en las rondas de paleta y fotos). Los más concretos y fáciles de instruir a Antigravity:
 
 1. Subir el autodiagnóstico por encima o al mismo nivel que la tabla de precios en el recorrido (Kahneman).
 2. Agregar un resultado concreto y verificable (formato Key Result) a la descripción de cada programa (Doerr/Koe/Lamorte).
 3. Sumar una línea de "Why Now" / costo de esperar cerca del CTA principal (Lamorte/Koe).
 4. Traer la mención de cupos limitados + ajustar 1-2 CTAs hacia lenguaje de Unidad (Cialdini).
+5. **Nuevo (Eyal): agregar captura de email al final del autodiagnóstico** — es el hallazgo más accionable y de mayor impacto de la ronda del 13/08, y a diferencia de los puntos 1-4 (que ya están en `AJUSTES-v3`), este todavía no tiene brief de implementación.
 
-El resto (Helio Vera, Clear, Fogg, Kersten) son más de **tono y encuadre** que de estructura — vale la pena tenerlos presentes al redactar cualquier copy nuevo, más que como un ajuste puntual de una sección.
+El resto (Helio Vera, Clear, Fogg, Kersten, y la mayor parte de Eyal) son más de **tono, encuadre y ventaja estructural ya existente** que de cambios puntuales — vale la pena tenerlos presentes al redactar cualquier copy nuevo, más que como un ajuste de una sola sección.
 
 ---
 
 ## Pendiente
 
-- [ ] Confirmar con Copp si esto se convierte en un brief formal para Antigravity (`AJUSTES-vX`) o si se aplica de a poco en la propuesta/conversación con Valeria primero.
+- [x] Puntos 1-4 convertidos en brief formal para Antigravity — ver `AJUSTES-v3-copy-y-conversion-9-lentes.md`.
+- [ ] Punto 5 (captura de email post-autodiagnóstico, hallazgo de Eyal) — confirmar con Copp si se convierte en su propio `AJUSTES-vX` o se suma a una ronda futura junto con otros pendientes de copy.

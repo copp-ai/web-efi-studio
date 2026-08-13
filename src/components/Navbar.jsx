@@ -19,7 +19,7 @@ export default function Navbar() {
     { name: "Servicios & Precios", href: "#servicios" },
     { name: "Autodiagnóstico", href: "#diagnostico" },
     { name: "Testimonios", href: "#testimonios" },
-    { name: "FAQ", href: "#faq" },
+    { name: "Preguntas Frecuentes", href: "#faq" },
   ];
 
   return (
