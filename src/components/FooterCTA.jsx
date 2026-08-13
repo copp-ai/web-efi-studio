@@ -7,13 +7,13 @@ export default function FooterCTA() {
   return (
     <footer className="relative bg-efi-dark border-t border-white/10 pt-20 pb-12 overflow-hidden">
       {/* Glow */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-pine-glow pointer-events-none opacity-30"></div>
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-gold-glow pointer-events-none opacity-30"></div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Main Banner CTA */}
-        <div className="max-w-4xl mx-auto text-center p-8 sm:p-12 rounded-3xl glass-panel-pine border-efi-pine/40 shadow-2xl mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-efi-pine/20 border border-efi-pine/40 text-efi-pine-light text-xs font-semibold uppercase tracking-wider mb-6">
+        <div className="max-w-4xl mx-auto text-center p-8 sm:p-12 rounded-3xl glass-panel-gold shadow-2xl mb-16">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-efi-gold/20 border border-efi-gold/40 text-efi-gold text-xs font-semibold uppercase tracking-wider mb-6">
             <Clock className="w-3.5 h-3.5" />
             Primer Paso de Baja Fricción
           </div>
@@ -26,7 +26,7 @@ export default function FooterCTA() {
             <p className="text-base sm:text-lg text-efi-muted max-w-2xl mx-auto">
               Salís con tu panorama financiero organizado, tus prioridades claras y un plan concreto armado para tu año. Sin compromisos de largo plazo.
             </p>
-            <p className="text-sm font-semibold text-efi-pine">
+            <p className="text-sm font-semibold text-efi-gold">
               Cada mes que pasa sin un sistema es un mes más de decisiones tomadas a ciegas.
             </p>
           </div>
@@ -36,7 +36,7 @@ export default function FooterCTA() {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full text-sm font-semibold uppercase tracking-wider text-efi-sand bg-efi-pine hover:bg-efi-pine-hover hover:shadow-glow-pine hover:scale-[1.02] transition-all"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full text-sm font-semibold uppercase tracking-wider text-efi-dark bg-efi-gold hover:bg-efi-gold-hover hover:shadow-glow-gold hover:scale-[1.02] transition-all"
             >
               <MessageCircle className="w-4 h-4 fill-current" />
               Empecemos a ordenar tus números
@@ -45,7 +45,7 @@ export default function FooterCTA() {
           </div>
 
           <div className="mt-6 flex items-center justify-center gap-2 text-xs text-efi-muted">
-            <Shield className="w-3.5 h-3.5 text-efi-pine" />
+            <Shield className="w-3.5 h-3.5 text-efi-gold" />
             Atención confidencial y personalizada · Sin pedido de claves bancarias
           </div>
         </div>
@@ -62,9 +62,9 @@ export default function FooterCTA() {
           <p>© {new Date().getFullYear()} eFI Studio. Todos los derechos reservados. Asunción, Paraguay.</p>
 
           <div className="flex gap-6 text-efi-muted">
-            <a href="#diferencial" className="hover:text-efi-pine transition-colors">Diferencial</a>
-            <a href="#servicios" className="hover:text-efi-pine transition-colors">Servicios</a>
-            <a href="#portal-preview" className="hover:text-efi-pine transition-colors">Portal</a>
+            <a href="#diferencial" className="hover:text-efi-gold transition-colors">Diferencial</a>
+            <a href="#servicios" className="hover:text-efi-gold transition-colors">Servicios</a>
+            <a href="#portal-preview" className="hover:text-efi-gold transition-colors">Portal</a>
           </div>
 
         </div>

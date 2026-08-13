@@ -13,13 +13,13 @@ export default function Authority() {
             <div className="relative mb-6 group">
               <div className="w-48 h-64 sm:w-56 sm:h-72 rounded-3xl overflow-hidden border-2 border-white/15 shadow-2xl relative">
                 <img 
-                  src="/assets/about-valeria.jpg" 
+                  src="/assets/founder-portrait.jpg" 
                   alt="Valeria Cuenca - Fundadora de eFI Studio" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-efi-dark/80 via-transparent to-transparent"></div>
               </div>
-              <div className="absolute -bottom-3 -right-3 bg-efi-pine text-efi-sand p-2.5 rounded-xl shadow-xl">
+              <div className="absolute -bottom-3 -right-3 bg-efi-gold text-efi-dark p-2.5 rounded-xl shadow-xl">
                 <Quote className="w-5 h-5" />
               </div>
             </div>
@@ -27,7 +27,7 @@ export default function Authority() {
             <h3 className="text-3xl font-serif font-bold text-efi-sand mb-1">
               Valeria Cuenca
             </h3>
-            <p className="text-xs text-efi-pine font-semibold uppercase tracking-widest mb-4">
+            <p className="text-xs text-efi-gold font-semibold uppercase tracking-widest mb-4">
               Fundadora & Directora de eFI Studio
             </p>
             <p className="text-sm text-efi-muted leading-relaxed">
@@ -48,7 +48,7 @@ export default function Authority() {
                 "El riesgo viene de no saber lo que estás haciendo."
               </p>
               <span className="block text-xs font-semibold uppercase tracking-wider text-efi-muted mt-2">
-                — Warren Buffett
+                · Warren Buffett
               </span>
             </div>
 
@@ -63,7 +63,7 @@ export default function Authority() {
                 <span className="text-xs text-efi-muted uppercase font-medium">Años Corporativos</span>
               </div>
               <div>
-                <span className="block font-serif text-3xl font-bold text-efi-pine">+100</span>
+                <span className="block font-serif text-3xl font-bold text-efi-gold">+100</span>
                 <span className="text-xs text-efi-muted uppercase font-medium">Familias Ordenadas</span>
               </div>
               <div>

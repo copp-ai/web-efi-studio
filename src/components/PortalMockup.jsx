@@ -12,7 +12,6 @@ import {
   CheckCircle, 
   AlertCircle,
   Building2,
-  Wallet,
   Sparkles,
   ChevronRight,
   UserCheck
@@ -78,8 +77,8 @@ export default function PortalMockup() {
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-efi-pine/10 border border-efi-pine/30 text-efi-pine text-xs font-semibold uppercase tracking-wider mb-4">
-            <Sparkles className="w-4 h-4 text-efi-pine" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-efi-gold/10 border border-efi-gold/30 text-efi-gold text-xs font-semibold uppercase tracking-wider mb-4">
+            <Sparkles className="w-4 h-4 text-efi-gold" />
             El Momento WOW · Vista Previa del Portal
           </div>
           <h2 className="text-3xl sm:text-5xl font-serif font-bold text-efi-sand mb-4">
@@ -91,7 +90,7 @@ export default function PortalMockup() {
         </div>
 
         {/* Mockup Container */}
-        <div className="rounded-3xl border border-efi-pine/30 bg-efi-surface shadow-2xl overflow-hidden glass-panel-gold">
+        <div className="rounded-3xl border border-efi-gold/30 bg-efi-surface shadow-2xl overflow-hidden glass-panel-gold">
           
           {/* Top Browser/Portal Header */}
           <div className="bg-efi-card px-6 py-4 border-b border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
@@ -107,7 +106,7 @@ export default function PortalMockup() {
               <div className="h-4 w-[1px] bg-white/10 hidden sm:block"></div>
 
               <div className="flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-efi-pine" />
+                <ShieldCheck className="w-4 h-4 text-efi-gold" />
                 <span className="text-xs text-efi-sand font-medium">
                   portal.efistudio.co <span className="text-efi-muted font-normal">(Portal Privado de Cliente)</span>
                 </span>
@@ -122,7 +121,7 @@ export default function PortalMockup() {
                   onClick={() => setClientProfile('ejecutivo')}
                   className={`px-3 py-1 rounded-lg text-xs font-semibold transition-colors ${
                     clientProfile === 'ejecutivo' 
-                      ? 'bg-efi-pine text-efi-dark shadow-sm' 
+                      ? 'bg-efi-gold text-efi-dark shadow-sm' 
                       : 'text-efi-muted hover:text-efi-sand'
                   }`}
                 >
@@ -132,7 +131,7 @@ export default function PortalMockup() {
                   onClick={() => setClientProfile('familia')}
                   className={`px-3 py-1 rounded-lg text-xs font-semibold transition-colors ${
                     clientProfile === 'familia' 
-                      ? 'bg-efi-pine text-efi-dark shadow-sm' 
+                      ? 'bg-efi-gold text-efi-dark shadow-sm' 
                       : 'text-efi-muted hover:text-efi-sand'
                   }`}
                 >
@@ -150,11 +149,11 @@ export default function PortalMockup() {
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 p-6 rounded-2xl bg-gradient-to-r from-efi-card via-efi-surface to-efi-card border border-white/5">
               <div>
                 <div className="flex items-center gap-2 mb-1">
-                  <span className="text-xs text-efi-pine font-semibold uppercase tracking-wider">
+                  <span className="text-xs text-efi-gold font-semibold uppercase tracking-wider">
                     {data.accountType}
                   </span>
-                  <span className="w-1.5 h-1.5 rounded-full bg-efi-emerald-light"></span>
-                  <span className="text-[11px] text-efi-emerald-light font-medium">Estado: Al día (Agosto 2026)</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-efi-gold"></span>
+                  <span className="text-[11px] text-efi-gold font-medium">Estado: Al día (Agosto 2026)</span>
                 </div>
                 <h3 className="text-2xl font-serif font-bold text-efi-sand">
                   Bienvenido, {data.name}
@@ -167,7 +166,7 @@ export default function PortalMockup() {
               <div className="flex items-center gap-4 border-t md:border-t-0 md:border-l border-white/10 pt-3 md:pt-0 md:pl-6">
                 <div className="text-left">
                   <span className="text-[10px] text-efi-muted uppercase tracking-wider block">Moneda de visualización</span>
-                  <span className="text-xs font-bold text-efi-pine flex items-center gap-1">
+                  <span className="text-xs font-bold text-efi-gold flex items-center gap-1">
                     Guaraníes Paraguayos (Gs.)
                   </span>
                 </div>
@@ -180,7 +179,7 @@ export default function PortalMockup() {
                 onClick={() => setActiveTab('resumen')}
                 className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold transition-all whitespace-nowrap ${
                   activeTab === 'resumen' 
-                    ? 'bg-efi-pine/20 text-efi-pine border border-efi-pine/40' 
+                    ? 'bg-efi-gold/20 text-efi-gold border border-efi-gold/40' 
                     : 'text-efi-muted hover:text-efi-sand hover:bg-white/5'
                 }`}
               >
@@ -192,7 +191,7 @@ export default function PortalMockup() {
                 onClick={() => setActiveTab('flujo')}
                 className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold transition-all whitespace-nowrap ${
                   activeTab === 'flujo' 
-                    ? 'bg-efi-pine/20 text-efi-pine border border-efi-pine/40' 
+                    ? 'bg-efi-gold/20 text-efi-gold border border-efi-gold/40' 
                     : 'text-efi-muted hover:text-efi-sand hover:bg-white/5'
                 }`}
               >
@@ -204,7 +203,7 @@ export default function PortalMockup() {
                 onClick={() => setActiveTab('objetivos')}
                 className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold transition-all whitespace-nowrap ${
                   activeTab === 'objetivos' 
-                    ? 'bg-efi-pine/20 text-efi-pine border border-efi-pine/40' 
+                    ? 'bg-efi-gold/20 text-efi-gold border border-efi-gold/40' 
                     : 'text-efi-muted hover:text-efi-sand hover:bg-white/5'
                 }`}
               >
@@ -216,7 +215,7 @@ export default function PortalMockup() {
                 onClick={() => setActiveTab('alertas')}
                 className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold transition-all whitespace-nowrap ${
                   activeTab === 'alertas' 
-                    ? 'bg-efi-pine/20 text-efi-pine border border-efi-pine/40' 
+                    ? 'bg-efi-gold/20 text-efi-gold border border-efi-gold/40' 
                     : 'text-efi-muted hover:text-efi-sand hover:bg-white/5'
                 }`}
               >
@@ -249,12 +248,12 @@ export default function PortalMockup() {
                   </div>
 
                   {/* KPI 2 */}
-                  <div className="p-5 rounded-2xl bg-efi-card border border-white/10 hover:border-efi-pine/30 transition-all">
+                  <div className="p-5 rounded-2xl bg-efi-card border border-white/10 hover:border-efi-gold/30 transition-all">
                     <span className="text-xs text-efi-muted uppercase font-medium block mb-1">
                       Flujo Neto Líquido del Mes
                     </span>
                     <div className="flex items-baseline justify-between">
-                      <span className="text-2xl font-serif font-bold text-efi-pine">
+                      <span className="text-2xl font-serif font-bold text-efi-gold">
                         {data.flujoNeto}
                       </span>
                     </div>
@@ -264,7 +263,7 @@ export default function PortalMockup() {
                   </div>
 
                   {/* KPI 3 */}
-                  <div className="p-5 rounded-2xl bg-efi-card border border-white/10 hover:border-efi-pine/30 transition-all">
+                  <div className="p-5 rounded-2xl bg-efi-card border border-white/10 hover:border-efi-gold/30 transition-all">
                     <span className="text-xs text-efi-muted uppercase font-medium block mb-1">
                       Fondo de Tranquilidad (Reserva)
                     </span>
@@ -279,12 +278,12 @@ export default function PortalMockup() {
                   </div>
 
                   {/* KPI 4 */}
-                  <div className="p-5 rounded-2xl bg-efi-card border border-white/10 hover:border-efi-pine/30 transition-all">
+                  <div className="p-5 rounded-2xl bg-efi-card border border-white/10 hover:border-efi-gold/30 transition-all">
                     <span className="text-xs text-efi-muted uppercase font-medium block mb-1">
                       Tasa de Ahorro / Inversión
                     </span>
                     <div className="flex items-baseline justify-between">
-                      <span className="text-2xl font-serif font-bold text-efi-emerald-light">
+                      <span className="text-2xl font-serif font-bold text-efi-gold">
                         {data.tasaAhorro}
                       </span>
                     </div>
@@ -296,7 +295,7 @@ export default function PortalMockup() {
                 </div>
 
                 {/* Premium Area Curve Chart Visual (Section 4ter Redesign) */}
-                <div className="p-6 rounded-2xl bg-efi-card/90 border border-efi-pine/30 shadow-2xl relative overflow-hidden">
+                <div className="p-6 rounded-2xl bg-efi-card/90 border border-efi-gold/30 shadow-2xl relative overflow-hidden">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
                     <div>
                       <h4 className="text-lg font-serif font-bold text-efi-sand">
@@ -305,8 +304,8 @@ export default function PortalMockup() {
                       <p className="text-xs text-efi-muted">Tendencia de flujo libre y acumulación mensual</p>
                     </div>
                     <div className="flex items-center gap-3">
-                      <span className="text-xs font-semibold text-efi-pine bg-efi-pine/10 px-3 py-1 rounded-full border border-efi-pine/30 flex items-center gap-1.5">
-                        <span className="w-2 h-2 rounded-full bg-efi-pine animate-pulse"></span>
+                      <span className="text-xs font-semibold text-efi-gold bg-efi-gold/10 px-3 py-1 rounded-full border border-efi-gold/30 flex items-center gap-1.5">
+                        <span className="w-2 h-2 rounded-full bg-efi-gold animate-pulse"></span>
                         Power BI Executive View
                       </span>
                     </div>
@@ -317,13 +316,13 @@ export default function PortalMockup() {
                     <svg className="w-full h-full overflow-visible" viewBox="0 0 500 150" preserveAspectRatio="none">
                       <defs>
                         <linearGradient id="goldGradientArea" x1="0" y1="0" x2="0" y2="1">
-                          <stop offset="0%" stopColor="#C5A880" stopOpacity="0.45" />
-                          <stop offset="100%" stopColor="#C5A880" stopOpacity="0.0" />
+                          <stop offset="0%" stopColor="#C9A84C" stopOpacity="0.45" />
+                          <stop offset="100%" stopColor="#C9A84C" stopOpacity="0.0" />
                         </linearGradient>
                         <linearGradient id="goldStrokeGrad" x1="0" y1="0" x2="1" y2="0">
                           <stop offset="0%" stopColor="#9C7F53" />
-                          <stop offset="50%" stopColor="#C5A880" />
-                          <stop offset="100%" stopColor="#E2CA9D" />
+                          <stop offset="50%" stopColor="#C9A84C" />
+                          <stop offset="100%" stopColor="#E5D298" />
                         </linearGradient>
                       </defs>
 
@@ -356,7 +355,7 @@ export default function PortalMockup() {
                             cx={pt.cx}
                             cy={pt.cy}
                             r="5"
-                            className="fill-efi-dark stroke-efi-pine stroke-[3] group-hover:r-7 transition-all"
+                            className="fill-efi-dark stroke-efi-gold stroke-[3] group-hover:r-7 transition-all"
                           />
                         </g>
                       ))}
@@ -370,7 +369,7 @@ export default function PortalMockup() {
                     <span>May 2026</span>
                     <span>Jun 2026</span>
                     <span>Jul 2026</span>
-                    <span className="text-efi-pine font-bold">Ago 2026 (Actual)</span>
+                    <span className="text-efi-gold font-bold">Ago 2026 (Actual)</span>
                   </div>
                 </div>
 
@@ -392,17 +391,17 @@ export default function PortalMockup() {
                       <div>
                         <div className="flex justify-between text-xs mb-1">
                           <span className="text-efi-sand font-medium">Gastos Fijos & Estructura del Hogar</span>
-                          <span className="text-efi-pine font-mono">{data.gastosFijos}</span>
+                          <span className="text-efi-gold font-mono">{data.gastosFijos}</span>
                         </div>
                         <div className="w-full bg-white/5 h-2 rounded-full overflow-hidden">
-                          <div className="bg-efi-pine h-full w-[40%] rounded-full"></div>
+                          <div className="bg-efi-gold h-full w-[40%] rounded-full"></div>
                         </div>
                       </div>
 
                       <div>
                         <div className="flex justify-between text-xs mb-1">
                           <span className="text-efi-sand font-medium">Estilo de Vida Discrecional</span>
-                          <span className="text-efi-pine font-mono">{data.gastosEstiloVida}</span>
+                          <span className="text-efi-gold font-mono">{data.gastosEstiloVida}</span>
                         </div>
                         <div className="w-full bg-white/5 h-2 rounded-full overflow-hidden">
                           <div className="bg-yellow-500/80 h-full w-[25%] rounded-full"></div>
@@ -412,17 +411,17 @@ export default function PortalMockup() {
                       <div>
                         <div className="flex justify-between text-xs mb-1">
                           <span className="text-efi-sand font-medium">Construcción de Patrimonio & Inversión</span>
-                          <span className="text-efi-pine font-mono">{data.inversionMes}</span>
+                          <span className="text-efi-gold font-mono">{data.inversionMes}</span>
                         </div>
                         <div className="w-full bg-white/5 h-2 rounded-full overflow-hidden">
-                          <div className="bg-efi-emerald-light h-full w-[35%] rounded-full"></div>
+                          <div className="bg-emerald-400 h-full w-[35%] rounded-full"></div>
                         </div>
                       </div>
 
                       <div>
                         <div className="flex justify-between text-xs mb-1">
                           <span className="text-efi-sand font-medium">Remanente Líquido Disponible</span>
-                          <span className="text-efi-pine font-mono">{data.disponibleMes}</span>
+                          <span className="text-efi-gold font-mono">{data.disponibleMes}</span>
                         </div>
                         <div className="w-full bg-white/5 h-2 rounded-full overflow-hidden">
                           <div className="bg-blue-400/80 h-full w-[15%] rounded-full"></div>
@@ -446,7 +445,7 @@ export default function PortalMockup() {
                       <span className="text-[10px] text-efi-muted uppercase font-semibold block mb-1">
                         Ingreso Neto del Mes Evaluado
                       </span>
-                      <span className="text-xl font-serif font-bold text-efi-pine">
+                      <span className="text-xl font-serif font-bold text-efi-gold">
                         {data.ingresoMes}
                       </span>
                     </div>
@@ -471,7 +470,7 @@ export default function PortalMockup() {
                         <span className={`text-[10px] px-2 py-0.5 rounded-full font-semibold ${
                           obj.progress === 100 
                             ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30' 
-                            : 'bg-efi-pine/20 text-efi-pine border border-efi-pine/30'
+                            : 'bg-efi-gold/20 text-efi-gold border border-efi-gold/30'
                         }`}>
                           {obj.progress}%
                         </span>
@@ -485,7 +484,7 @@ export default function PortalMockup() {
                         <div className="w-full bg-white/5 h-2 rounded-full overflow-hidden">
                           <div 
                             style={{ width: `${obj.progress}%` }} 
-                            className={`h-full rounded-full ${obj.progress === 100 ? 'bg-emerald-400' : 'bg-efi-pine'}`}
+                            className={`h-full rounded-full ${obj.progress === 100 ? 'bg-emerald-400' : 'bg-efi-gold'}`}
                           ></div>
                         </div>
                       </div>
@@ -508,7 +507,7 @@ export default function PortalMockup() {
                       {al.type === 'ok' ? (
                         <CheckCircle className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
                       ) : (
-                        <Sparkles className="w-5 h-5 text-efi-pine shrink-0 mt-0.5" />
+                        <Sparkles className="w-5 h-5 text-efi-gold shrink-0 mt-0.5" />
                       )}
                       <p className="text-xs text-efi-sand leading-relaxed">
                         {al.text}
@@ -520,14 +519,14 @@ export default function PortalMockup() {
             )}
 
             {/* Bottom Footer Note inside Portal */}
-            <div className="p-4 rounded-xl bg-efi-dark/60 border border-efi-pine/20 text-center flex flex-col sm:flex-row items-center justify-between gap-3">
+            <div className="p-4 rounded-xl bg-efi-dark/60 border border-efi-gold/20 text-center flex flex-col sm:flex-row items-center justify-between gap-3">
               <span className="text-xs text-efi-muted flex items-center gap-2">
-                <Lock className="w-3.5 h-3.5 text-efi-pine" />
+                <Lock className="w-3.5 h-3.5 text-efi-gold" />
                 Vista previa conceptual interactiva para clientes eFI Studio. Todos los datos son confidenciales y están cifrados.
               </span>
               <a 
                 href="#servicios"
-                className="text-xs font-semibold text-efi-pine hover:text-efi-pine-light transition-colors whitespace-nowrap"
+                className="text-xs font-semibold text-efi-gold hover:text-efi-gold-light transition-colors whitespace-nowrap"
               >
                 Quiero tener mi propio portal →
               </a>

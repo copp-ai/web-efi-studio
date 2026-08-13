@@ -49,7 +49,7 @@ export default function FAQ() {
         
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="text-xs font-semibold uppercase tracking-widest text-efi-pine block mb-3">
+          <span className="text-xs font-semibold uppercase tracking-widest text-efi-gold block mb-3">
             Respuesta a tus dudas
           </span>
           <h2 className="text-3xl sm:text-5xl font-serif font-bold text-efi-sand mb-4">
@@ -67,13 +67,13 @@ export default function FAQ() {
           <div className="lg:col-span-4 hidden lg:block sticky top-28">
             <div className="rounded-3xl overflow-hidden border border-white/10 shadow-2xl relative h-[440px] group">
               <img 
-                src="/assets/faq-photo.jpg" 
+                src="/assets/faq-personalized.jpg" 
                 alt="Atención boutique eFI Studio" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-efi-dark/90 via-efi-dark/20 to-transparent"></div>
               <div className="absolute bottom-6 left-6 right-6">
-                <span className="text-xs font-semibold uppercase tracking-wider text-efi-pine block mb-1">
+                <span className="text-xs font-semibold uppercase tracking-wider text-efi-gold block mb-1">
                   Atención Personalizada
                 </span>
                 <p className="text-sm font-serif font-medium text-efi-sand">
@@ -90,17 +90,17 @@ export default function FAQ() {
               return (
                 <div 
                   key={idx}
-                  className="rounded-2xl bg-efi-surface/60 border border-white/10 overflow-hidden transition-colors hover:border-efi-pine/30"
+                  className="rounded-2xl bg-efi-surface/60 border border-white/10 overflow-hidden transition-colors hover:border-efi-gold/30"
                 >
                   <button
                     onClick={() => toggle(idx)}
-                    className="w-full p-6 text-left flex items-center justify-between gap-4 font-serif text-lg font-semibold text-efi-sand hover:text-efi-pine transition-colors"
+                    className="w-full p-6 text-left flex items-center justify-between gap-4 font-serif text-lg font-semibold text-efi-sand hover:text-efi-gold transition-colors"
                   >
                     <span className="flex items-center gap-3">
-                      <HelpCircle className="w-5 h-5 text-efi-pine shrink-0" />
+                      <HelpCircle className="w-5 h-5 text-efi-gold shrink-0" />
                       {faq.q}
                     </span>
-                    <ChevronDown className={`w-5 h-5 text-efi-muted shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-efi-pine' : ''}`} />
+                    <ChevronDown className={`w-5 h-5 text-efi-muted shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-efi-gold' : ''}`} />
                   </button>
 
                   {isOpen && (

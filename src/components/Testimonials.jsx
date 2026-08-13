@@ -43,7 +43,7 @@ export default function Testimonials() {
         
         {/* Section Header */}
         <div className="max-w-2xl mx-auto text-center mb-20">
-          <span className="text-xs font-semibold uppercase tracking-widest text-efi-pine block mb-3">
+          <span className="text-xs font-semibold uppercase tracking-widest text-efi-gold block mb-3">
             Prueba Social Real
           </span>
           <h2 className="text-3xl sm:text-5xl font-serif font-bold text-efi-sand mb-4">
@@ -63,13 +63,13 @@ export default function Testimonials() {
               </blockquote>
               
               <div className="flex items-center gap-3 pt-4 border-t border-white/10">
-                <span className="w-8 h-[1px] bg-efi-pine/50"></span>
+                <span className="w-8 h-[1px] bg-efi-gold/50"></span>
                 <div>
                   <h4 className="text-lg font-serif font-bold text-efi-sand">
                     {item.name}
                   </h4>
                   <p className="text-xs text-efi-muted uppercase font-semibold tracking-wider">
-                    {item.role} · <span className="text-efi-pine font-normal">{item.highlight}</span>
+                    {item.role} · <span className="text-efi-gold font-normal">{item.highlight}</span>
                   </p>
                 </div>
               </div>

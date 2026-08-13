@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
       {/* Background Glow */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-pine-glow pointer-events-none opacity-50"></div>
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-gold-glow pointer-events-none opacity-50"></div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
 
@@ -30,7 +30,7 @@ export default function Hero() {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full text-sm font-semibold uppercase tracking-wider text-efi-sand bg-efi-pine hover:bg-efi-pine-hover hover:shadow-glow-pine hover:scale-[1.02] transition-all duration-200"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full text-sm font-semibold uppercase tracking-wider text-efi-dark bg-efi-gold hover:bg-efi-gold-hover hover:shadow-glow-gold hover:scale-[1.02] transition-all duration-200"
           >
             <Clock className="w-4 h-4" />
             Agendar Clarity Session · 90 min
@@ -48,15 +48,15 @@ export default function Hero() {
         {/* 3 Streamlined Authority Bullets */}
         <div className="flex flex-wrap items-center justify-center gap-8 pt-8 border-t border-white/10 text-sm text-efi-muted font-medium">
           <span className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-efi-pine"></span>
+            <span className="w-1.5 h-1.5 rounded-full bg-efi-gold"></span>
             14+ Años en Multinacionales
           </span>
           <span className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-efi-pine"></span>
+            <span className="w-1.5 h-1.5 rounded-full bg-efi-gold"></span>
             +100 Familias Acompañadas
           </span>
           <span className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-efi-pine"></span>
+            <span className="w-1.5 h-1.5 rounded-full bg-efi-gold"></span>
             Cero Carga Operativa
           </span>
         </div>

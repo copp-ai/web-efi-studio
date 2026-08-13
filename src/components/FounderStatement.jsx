@@ -4,7 +4,7 @@ export default function FounderStatement() {
   return (
     <section className="py-28 relative overflow-hidden bg-efi-dark border-y border-white/5">
       {/* Background Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-pine-glow pointer-events-none opacity-30"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-gold-glow pointer-events-none opacity-30"></div>
 
       <div className="max-w-5xl mx-auto px-6 text-center relative z-10">
         
@@ -18,11 +18,11 @@ export default function FounderStatement() {
 
         {/* Founder Attribution */}
         <div className="flex items-center justify-center gap-3">
-          <span className="w-8 h-[1px] bg-efi-pine/50"></span>
-          <span className="text-sm font-semibold uppercase tracking-widest text-efi-pine">
+          <span className="w-8 h-[1px] bg-efi-gold/50"></span>
+          <span className="text-sm font-semibold uppercase tracking-widest text-efi-gold">
             Valeria Cuenca · Fundadora eFI Studio
           </span>
-          <span className="w-8 h-[1px] bg-efi-pine/50"></span>
+          <span className="w-8 h-[1px] bg-efi-gold/50"></span>
         </div>
 
       </div>

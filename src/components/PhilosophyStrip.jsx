@@ -20,9 +20,9 @@ export default function PhilosophyStrip() {
       className="relative min-h-[520px] flex items-center overflow-hidden"
       aria-label="Filosofía eFI Studio"
     >
-      {/* Background image from Unsplash – calm desk/workspace B&W */}
+      {/* Background image – Valeria Cuenca en espacio editorial premium B&W */}
       <img
-        src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1600&q=80"
+        src="/assets/philosophy-band.jpg"
         alt=""
         aria-hidden="true"
         className="absolute inset-0 w-full h-full object-cover object-center grayscale"
@@ -33,12 +33,12 @@ export default function PhilosophyStrip() {
       <div className="absolute inset-0 bg-efi-dark/82" />
 
       {/* Left vertical accent line */}
-      <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-efi-pine opacity-70" />
+      <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-efi-gold opacity-70" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-8 sm:px-12 lg:px-16 py-20 w-full">
 
         {/* Eyebrow */}
-        <span className="text-[11px] font-semibold uppercase tracking-[0.25em] text-efi-pine block mb-10">
+        <span className="text-[11px] font-semibold uppercase tracking-[0.25em] text-efi-gold block mb-10">
           Filosofía de Trabajo · eFI Studio
         </span>
 

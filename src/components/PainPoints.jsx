@@ -9,7 +9,7 @@ export default function PainPoints() {
           
           {/* Left Column: Bold Headline */}
           <div className="lg:col-span-5 space-y-6">
-            <span className="text-xs font-semibold uppercase tracking-widest text-efi-pine block">
+            <span className="text-xs font-semibold uppercase tracking-widest text-efi-gold block">
               El problema real
             </span>
             <h2 className="text-4xl sm:text-5xl font-serif font-bold text-efi-sand leading-tight">
@@ -29,7 +29,7 @@ export default function PainPoints() {
             {/* Point 1 */}
             <div className="space-y-2">
               <div className="flex items-center gap-3">
-                <span className="font-serif font-bold text-2xl text-efi-pine">01</span>
+                <span className="font-serif font-bold text-2xl text-efi-gold">01</span>
                 <h3 className="text-xl font-serif font-semibold text-efi-sand">
                   "Sé que gano bien, pero no sé exactamente a dónde se va"
                 </h3>
@@ -42,7 +42,7 @@ export default function PainPoints() {
             {/* Point 2 */}
             <div className="space-y-2">
               <div className="flex items-center gap-3">
-                <span className="font-serif font-bold text-2xl text-efi-pine">02</span>
+                <span className="font-serif font-bold text-2xl text-efi-gold">02</span>
                 <h3 className="text-xl font-serif font-semibold text-efi-sand">
                   Sin ganas de armar Excel los domingos por la tarde
                 </h3>
@@ -55,7 +55,7 @@ export default function PainPoints() {
             {/* Point 3 */}
             <div className="space-y-2">
               <div className="flex items-center gap-3">
-                <span className="font-serif font-bold text-2xl text-efi-pine">03</span>
+                <span className="font-serif font-bold text-2xl text-efi-gold">03</span>
                 <h3 className="text-xl font-serif font-semibold text-efi-sand">
                   Buscás un aliado estratégico, no un asesor que te juzgue
                 </h3>
