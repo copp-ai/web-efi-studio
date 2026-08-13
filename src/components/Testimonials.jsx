@@ -18,17 +18,17 @@ export default function Testimonials() {
 
   const secondaryTestimonials = [
     {
-      name: "Cliente eFI",
+      name: "C.R.",
       role: "Profesional Independiente",
       quote: "Valeria me ayudó a separar mis finanzas personales del negocio y a entender de verdad cuál era mi capacidad real de retiro mensual sin descapitalizarme."
     },
     {
-      name: "Cliente eFI",
+      name: "J.P.",
       role: "Ejecutivo Corporativo",
       quote: "Increíble la claridad con la que salí de la Clarity Session de 90 minutos. Armamos la planilla completa y me dio el empujón exacto para poner en orden mis ahorros."
     },
     {
-      name: "Cliente eFI",
+      name: "M. & S.",
       role: "Familia / Pareja",
       quote: "El portal y la metodología hacen que el seguimiento mensual sea simple y cero estresante. Logramos ponernos de acuerdo en las metas de la casa de forma neutral."
     }

@@ -6,6 +6,7 @@ export default function ServicesCatalog() {
     {
       id: "clarity",
       title: "eFI Clarity Session",
+      step: "Paso 1 · Puerta de Entrada",
       badge: "Puerta de Entrada",
       price: "Gs. 450.000",
       period: "Sesión única de 90 min",
@@ -14,7 +15,7 @@ export default function ServicesCatalog() {
       features: [
         "Diagnóstico completo de liquidez e ingresos",
         "Planilla anual ejecutiva personalizada",
-        "Estructuración de fondo de tranquilidad",
+        "Estructuración de fondo de tranquilidad de 3 a 6 meses de gastos fijos",
         "Hoja de ruta con decisiones accionables"
       ],
       ctaText: "Reservar Clarity Session",
@@ -23,6 +24,7 @@ export default function ServicesCatalog() {
     {
       id: "personal",
       title: "eFI Personal Finance",
+      step: "Paso 2 · Profundización",
       badge: "Programa Individual",
       price: "Gs. 2.900.000",
       period: "4 sesiones · 1 mes",
@@ -40,6 +42,7 @@ export default function ServicesCatalog() {
     {
       id: "family",
       title: "eFI Family Care",
+      step: "Paso 2 · Cobertura Familiar",
       badge: "Finanzas en Pareja / Familia",
       price: "Gs. 4.900.000",
       period: "4 sesiones · Cobertura Familiar",
@@ -57,7 +60,8 @@ export default function ServicesCatalog() {
     {
       id: "wealth",
       title: "eFI Wealth Flow",
-      badge: "Retainer Mensual Continuo",
+      step: "Paso 3 · Flujo Continuo",
+      badge: "Acompañamiento Mensual Continuo",
       price: "Gs. 1.200.000",
       period: "por mes (suscripción)",
       highlight: false,
@@ -80,13 +84,13 @@ export default function ServicesCatalog() {
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <span className="text-xs font-semibold uppercase tracking-widest text-efi-gold block mb-3">
-            Programas & Tabla Comparativa
+            Programas & Escalera de Valor
           </span>
           <h2 className="text-3xl sm:text-5xl font-serif font-bold text-efi-sand mb-4">
             Planes diseñados para cada etapa de tu vida
           </h2>
           <p className="text-base text-efi-muted">
-            Transparencia total en precios y alcance claro de cada servicio. Sin sorpresas ni costos ocultos.
+            Transparencia total en precios y alcance claro de cada servicio. Empezá con un primer paso chico y avanzá a tu propio ritmo.
           </p>
         </div>
 
@@ -109,9 +113,14 @@ export default function ServicesCatalog() {
               )}
 
               <div>
-                <span className={`text-[11px] font-semibold uppercase tracking-wider block mb-2 ${prog.highlight ? 'text-efi-gold' : 'text-efi-muted'}`}>
-                  {prog.badge}
-                </span>
+                <div className="flex items-center justify-between gap-2 mb-2">
+                  <span className={`text-[11px] font-semibold uppercase tracking-wider block ${prog.highlight ? 'text-efi-gold' : 'text-efi-muted'}`}>
+                    {prog.badge}
+                  </span>
+                  <span className="text-[10px] text-efi-subtle uppercase tracking-wider font-medium">
+                    {prog.step}
+                  </span>
+                </div>
 
                 <h3 className="text-2xl font-serif font-bold text-efi-sand mb-3">
                   {prog.title}

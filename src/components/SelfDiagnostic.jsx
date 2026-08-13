@@ -68,7 +68,7 @@ export default function SelfDiagnostic() {
         title: "eFI Wealth Flow",
         tag: "Recomendado para tu perfil",
         price: "Gs. 1.200.000 / mes",
-        duration: "Retainer Mensual Continuo",
+        duration: "Acompañamiento Mensual Continuo",
         desc: "Delegá la carga operativa. Recibís un flujo continuo de análisis y reportes de desvíos cada mes, sin tener que pedirlos.",
         whatsappUrl: "https://wa.me/595971791069?text=Hola%20Valeria,%20hice%20el%20autodiagn%C3%B3stico%20y%20quisiera%20consultar%20disponibilidad%20para%20eFI%20Wealth%20Flow"
       };
@@ -181,18 +181,18 @@ export default function SelfDiagnostic() {
                 {recommendation.title}
               </h3>
 
+              <p className="text-base text-efi-muted max-w-xl mx-auto leading-relaxed">
+                {recommendation.desc}
+              </p>
+
               <div className="inline-block bg-efi-card px-6 py-3 rounded-2xl border border-white/10">
-                <span className="block font-serif text-3xl font-bold text-efi-sand">
+                <span className="block font-serif text-2xl sm:text-3xl font-bold text-efi-sand">
                   {recommendation.price}
                 </span>
                 <span className="text-xs text-efi-muted uppercase font-semibold">
                   {recommendation.duration}
                 </span>
               </div>
-
-              <p className="text-base text-efi-muted max-w-xl mx-auto leading-relaxed">
-                {recommendation.desc}
-              </p>
 
               <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a

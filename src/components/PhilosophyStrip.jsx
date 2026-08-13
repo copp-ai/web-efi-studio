@@ -25,12 +25,12 @@ export default function PhilosophyStrip() {
         src="/assets/philosophy-band.jpg"
         alt=""
         aria-hidden="true"
-        className="absolute inset-0 w-full h-full object-cover object-center grayscale brightness-75 contrast-90"
+        className="absolute inset-0 w-full h-full object-cover object-center grayscale brightness-90 contrast-95"
         loading="lazy"
       />
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-efi-dark/90" />
+      <div className="absolute inset-0 bg-efi-dark/75" />
 
       {/* Left vertical accent line */}
       <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-efi-gold opacity-70" />

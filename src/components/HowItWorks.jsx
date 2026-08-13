@@ -1,4 +1,5 @@
 import React from 'react';
+import { RefreshCw } from 'lucide-react';
 
 export default function HowItWorks() {
   const steps = [
@@ -19,8 +20,8 @@ export default function HowItWorks() {
     },
     {
       number: "04",
-      title: "Decidís",
-      description: "Tomas decisiones estratégicas respaldadas en datos reales con total previsibilidad y paz mental."
+      title: "Liderás",
+      description: "Te convertís en quien conduce y proyecta su patrimonio con total previsibilidad y paz mental."
     }
   ];
 
@@ -66,6 +67,14 @@ export default function HowItWorks() {
 
             </div>
           ))}
+        </div>
+
+        {/* Recurring Flow Indicator for Wealth Flow */}
+        <div className="mt-12 text-center">
+          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-efi-surface/80 border border-white/10 text-xs text-efi-muted">
+            <RefreshCw className="w-3.5 h-3.5 text-efi-gold" />
+            <span>En <strong className="text-efi-sand font-medium">eFI Wealth Flow</strong>, este ciclo de análisis y ajuste se repite mensualmente como un flujo continuo.</span>
+          </div>
         </div>
 
       </div>
