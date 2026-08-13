@@ -5,7 +5,7 @@ export default function SelfDiagnostic() {
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState({
     scope: null,       // individual | family | business
-    goal: null,        // ordering | savings | retainer
+    goal: null,        // ordering | savings | delegate
     experience: null   // beginner | intermediate
   });
 
@@ -17,7 +17,7 @@ export default function SelfDiagnostic() {
       options: [
         { id: "individual", label: "Finanzas Personales", desc: "Soy profesional independiente o ejecutivo y quiero controlar mi presupuesto propio." },
         { id: "family", label: "Finanzas en Pareja / Familia", desc: "Buscamos ponernos de acuerdo en las metas del hogar y organizar fondos comunes." },
-        { id: "business", label: "Finanzas del Negocio / Retainer", desc: "Quiero delegar el procesamiento operativo mensual de mis ingresos y gastos." }
+        { id: "business", label: "Finanzas del Negocio / Acompañamiento Mensual", desc: "Quiero delegar el procesamiento operativo mensual de mis ingresos y gastos." }
       ]
     },
     {
