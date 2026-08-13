@@ -37,7 +37,7 @@ export default function Testimonials() {
   return (
     <section id="testimonios" className="py-28 bg-efi-dark relative border-t border-white/5 overflow-hidden">
       {/* Background Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-pine-glow pointer-events-none opacity-15 blur-3xl"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-gold-glow pointer-events-none opacity-20 blur-3xl"></div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         

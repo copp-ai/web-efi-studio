@@ -17,13 +17,6 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.glass-panel-pine {
-  background: rgba(22, 37, 41, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(43, 65, 56, 0.45);
-}
-
 .glass-panel-gold {
   background: rgba(22, 37, 41, 0.85);
   backdrop-filter: blur(16px);
@@ -33,12 +26,6 @@
 
 .text-gold-gradient {
   background: linear-gradient(135deg, #F2E3B3 0%, #C9A84C 60%, #9E7F30 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.text-pine-gradient {
-  background: linear-gradient(135deg, #C8DDD5 0%, #2B4138 60%, #1A2B23 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -61,5 +48,5 @@
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #2B4138;
+  background: #C9A84C;
 }

@@ -275,13 +275,13 @@ Usarlas con moderación: si aparecen en cada frase pierden peso. La regla de "do
 
 | Rol | Fuente / Uso |
 |---|---|
-| Titular principal | Miller Banner Roman · Headlines, títulos de sección, portadas |
-| Titular secundario / énfasis | Miller Banner SemiBold · Subheads, pull quotes, cifras destacadas |
-| Titular ligero | Miller Banner Light · Titulares grandes a escala, efecto editorial |
-| Titulares en cursiva | Miller Banner Italic / Light Italic · Citas, nombres de servicios, énfasis editorial |
+| Titular principal | Miller Banner Roman / Cormorant Garamond (Web) · Headlines, títulos de sección, portadas |
+| Titular secundario / énfasis | Miller Banner SemiBold / Cormorant Garamond SemiBold · Subheads, pull quotes, cifras destacadas |
+| Titular ligero | Miller Banner Light / Cormorant Garamond Light · Titulares grandes a escala, efecto editorial |
+| Titulares en cursiva | Miller Banner Italic / Cormorant Garamond Italic · Citas, nombres de servicios, énfasis editorial |
 | Cuerpo de texto | Inter Variable · Todo texto corrido, listas, descripciones, UI |
 
-Miller Banner es la voz tipográfica de eFI: elegante, editorial, con carácter. Inter es la contraparte funcional: legible, moderna, neutra. Siempre en cuerpo de texto. El contraste serif (Miller) + sans-serif (Inter) define el equilibrio: sofisticación + claridad.
+Miller Banner es la voz tipográfica editorial de eFI; Cormorant Garamond es la fuente serif oficial ratificada para el sitio web y prototipos digitales en vivo. Inter es la contraparte funcional: legible, moderna, neutra, siempre en cuerpo de texto. El contraste serif + sans-serif (Inter) define el equilibrio: sofisticación + claridad.
 
 **Nunca usar Arial, Helvetica o fuentes del sistema como tipografía visible en materiales de marca.**
 
@@ -301,4 +301,5 @@ Si una pieza falla en el punto 3, es la señal más clara de que el arquetipo se
 
 ## 14. Historial de versiones
 
-**v1 — agosto 2026:** primera versión unificada. Fusiona *eFI Studio · Brand (ES)* (julio 2026) con *eFI Studio: System Design de Marca v1* (agosto 2026). Arquetipo elegido: Mago con acento de Sabio, sobre 3 candidatos evaluados (Mago+Sabio, Gobernante+Cuidador, Sabio atípico). Pendiente de revisión cada 6-8 semanas. Si esta elección generó fricción en la producción de contenido real, revisar acá primero.
+- **v1 — agosto 2026:** primera versión unificada. Fusiona *eFI Studio · Brand (ES)* (julio 2026) con *eFI Studio: System Design de Marca v1* (agosto 2026). Arquetipo elegido: Mago con acento de Sabio, sobre 3 candidatos evaluados (Mago+Sabio, Gobernante+Cuidador, Sabio atípico).
+- **v1.1 (AJUSTES-v10) — agosto 2026:** ratificación formal de Cormorant Garamond como tipografía serif oficial de titulares para la versión web y prototipos digitales. Pendiente de revisión de logo vectorizado con Valeria.
