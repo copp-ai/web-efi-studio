@@ -38,7 +38,7 @@ export default function Navbar() {
             <img 
               src="/assets/logo/efi-studio-lockup-sage.png" 
               alt="eFI Studio" 
-              className="h-8 sm:h-9 w-auto object-contain transition-opacity duration-200 group-hover:opacity-90" 
+              className="h-11 sm:h-14 w-auto object-contain transition-opacity duration-200 group-hover:opacity-90" 
             />
           </a>
 

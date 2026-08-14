@@ -57,7 +57,7 @@ export default function FooterCTA() {
             <img 
               src="/assets/logo/efi-studio-lockup-sage.png" 
               alt="eFI Studio" 
-              className="h-7 sm:h-8 w-auto object-contain" 
+              className="h-9 sm:h-11 w-auto object-contain" 
             />
             <span className="hidden sm:inline text-efi-subtle">·</span>
             <span className="text-xs text-efi-subtle tracking-widest uppercase">Finanzas Boutique</span>
