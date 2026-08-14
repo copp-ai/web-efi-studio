@@ -2,6 +2,87 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Miller Banner activado 14/08 a pedido de Copp para vista previa visual. PENDIENTE: confirmar con Valeria si la licencia cubre uso web. Si no la cubre, revertir el paso 4 de AJUSTES-v11. */
+@font-face {
+  font-family: 'Miller Banner';
+  src: url('/fonts/miller-banner/MillerBanner-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Miller Banner';
+  src: url('/fonts/miller-banner/MillerBanner-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Miller Banner';
+  src: url('/fonts/miller-banner/MillerBanner-Roman.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Miller Banner';
+  src: url('/fonts/miller-banner/MillerBanner-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Miller Banner';
+  src: url('/fonts/miller-banner/MillerBanner-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Miller Banner';
+  src: url('/fonts/miller-banner/MillerBanner-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Miller Banner';
+  src: url('/fonts/miller-banner/MillerBanner-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Miller Banner';
+  src: url('/fonts/miller-banner/MillerBanner-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Miller Banner';
+  src: url('/fonts/miller-banner/MillerBanner-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Miller Banner';
+  src: url('/fonts/miller-banner/MillerBanner-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
 @layer base {
   body {
     background-color: #0A1113;

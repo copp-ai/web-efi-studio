@@ -33,11 +33,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
-          {/* Wordmark */}
-          <a href="#" className="group">
-            <span className="font-serif font-bold text-2xl text-efi-sand tracking-wide group-hover:text-efi-gold transition-colors duration-200">
-              eFI Studio
-            </span>
+          {/* Real Logo */}
+          <a href="#" className="group flex items-center">
+            <img 
+              src="/assets/logo/efi-studio-lockup-sage.png" 
+              alt="eFI Studio" 
+              className="h-8 sm:h-9 w-auto object-contain transition-opacity duration-200 group-hover:opacity-90" 
+            />
           </a>
 
           {/* Desktop Navigation Links */}

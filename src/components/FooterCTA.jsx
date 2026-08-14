@@ -53,8 +53,12 @@ export default function FooterCTA() {
         {/* Footer Bottom Links & Copyright */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-efi-muted">
           
-          <div className="flex flex-col sm:flex-row sm:items-center gap-0.5 sm:gap-2">
-            <span className="font-serif text-sm text-efi-sand font-semibold">eFI Studio</span>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+            <img 
+              src="/assets/logo/efi-studio-lockup-sage.png" 
+              alt="eFI Studio" 
+              className="h-7 sm:h-8 w-auto object-contain" 
+            />
             <span className="hidden sm:inline text-efi-subtle">·</span>
             <span className="text-xs text-efi-subtle tracking-widest uppercase">Finanzas Boutique</span>
           </div>

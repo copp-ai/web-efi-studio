@@ -26,7 +26,7 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        serif: ['"Miller Banner"', '"Cormorant Garamond"', 'Georgia', 'serif'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
